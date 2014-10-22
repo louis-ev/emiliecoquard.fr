@@ -1,0 +1,1115 @@
+@import (inline) "normalize.min.css";
+@import "lesshat.less";
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+@cdarktext : #303030;
+@clgrey : #dcdcdc;
+
+@clinestroke : #333;
+
+@cedition : #e95474;
+@cidentite : #ffd366;
+@cnumerique : #b4e0f9;
+@cobjet : #dae291;
+
+@cmemoire : #FFD366;
+@ctypo3D : #DAE291;
+@cgoutte : #DAE291;
+@cillustrations: #DAE291;
+@cfourberies : #E95474;
+@cministere : #E95474;
+@cinfluencedeslivres : #E95474;
+@cbenoitgaignard : #E95474;
+@ctrendiseases : #E95474;
+@cphotomaton : #FFD366;
+@cseries : #FFD366;
+@cvilles: #FFD366;
+@cairfrance : #E95474;
+@ctroishommes : #DAE291;
+@calice : #E95474;
+@cmacu : #FFD366;
+
+html,
+button,
+input,
+select,
+textarea {
+    color: @cdarktext;
+}
+
+html {
+    font-size: 1em;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #333;
+    text-shadow: none;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+::selection {
+    background: #333;
+    text-shadow: none;
+}
+
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	.audimat-reg;
+}
+
+
+/* ==========================================================================
+									Page Emilie
+   ========================================================================== */
+
+
+/* Typographie*/
+
+@font-face {
+    font-family: 'audimatregular';
+    src: url('../font/audimat-regular-webfont.eot');
+    src: url('../font/audimat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/audimat-regular-webfont.woff') format('woff'),
+         url('../font/audimat-regular-webfont.ttf') format('truetype'),
+         url('../font/audimat-regular-webfont.svg#audimatregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'audimatregular';
+    src: url('../font/audimat-bold-webfont.eot');
+    src: url('../font/audimat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/audimat-bold-webfont.woff') format('woff'),
+         url('../font/audimat-bold-webfont.ttf') format('truetype'),
+         url('../font/audimat-bold-webfont.svg#audimatregular') format('svg');
+    font-weight: bold;
+    font-style: bold;
+}
+
+
+.audimat-reg {
+    font-family: 'audimatregular';
+    font-weight: normal;
+}
+.audimat-bold {
+    font-family: 'audimatregular';
+    font-weight: bold;
+}
+
+
+
+/* DEBUG : ajout de couleur aux éléments */
+
+//*:nth-child(n) { background-color: rgba(255,0,0,.2); }
+
+
+html, body {
+	min-height: 100%;
+}
+
+
+body {
+	.audimat-reg;
+
+}
+
+html {
+    font-size: 1em;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #E67011;
+
+	&:hover, &:visited {
+	    color: #303030;
+	}
+}
+
+
+img {
+	display: block;
+}
+
+
+.conteneur {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+	@media only screen and (min-width: 889px) {
+	    width: 800px;
+	}
+	@media only screen and (min-width: 1111px) {
+	    width: 1000px;
+	}
+	@media only screen and (min-width: 1334px) {
+	    width: 1200px;
+	}
+
+}
+
+
+article {
+	padding: 0;
+	margin: 0;
+
+	transition: height 1s ease-in, padding-top 1s ease-in;
+}
+
+h1 {
+	font-size:2em;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+
+}
+
+p, ul {
+	font-size:1.2em;
+	font-size: 16px;
+
+}
+
+body.propos ul {
+	list-style: none;
+	padding: 0;
+}
+
+.offscreenDump {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+	display: none;
+}
+
+/* ==========================================================================
+									En tête et menu textuel
+   ========================================================================== */
+
+
+#entete {
+	position: relative;
+	margin:auto;
+	text-align: center;
+	height: 290px;
+	z-index: 150;
+
+
+	.is-project & {
+
+		&.is-sticky {
+
+			.conteneurEntete {
+				position: fixed;
+				bottom: 94%;
+				bottom: ~"calc(100% - 50px )";
+				padding-bottom: 5px;
+			}
+		}
+
+	}
+
+	.conteneurEntete {
+		.conteneur;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		border-bottom: 4px solid #fff;
+		bottom:100%;
+		background-color: #fff;
+		transition: bottom 1s ease-out;
+	}
+
+	.containerLogoTagline {
+
+		width: 93.75%;
+		max-width: 300px;
+		margin:auto;
+		border-bottom: 1px solid @clgrey;
+
+		#logo{
+			position: relative;
+			left: 0;
+			top:0;
+			height: 51px;
+
+			margin: auto;
+			margin-bottom: 4px;
+
+			path, polygon, rect {
+				fill: #303030;
+			}
+		}
+
+
+		.tagline {
+			font-size: 18.15px;
+			font-weight: normal;
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
+
+	}
+	.listCategories {
+
+		width: 90,00%;
+		max-width: 500px;
+		height: 50px;
+		position: relative;
+		margin:auto;
+
+		ul,li {
+			margin: 0;padding: 0; font-size: 0; line-height: 0;
+		}
+
+		// le bloc des catégories, qui sera fixed
+		.itemList {
+			max-width: 500px;
+			width: 100%;
+			position: absolute;
+			top:0;
+			z-index: 14;
+
+			.is-project &.is-sticky {
+				position: fixed;
+				top:0;
+				border-bottom:2px solid white;
+			}
+		}
+
+		.categorie {
+
+			&.edition {
+				color: @cedition;
+
+				&.is-selected {
+					background-color: @cedition;
+				}
+			}
+			&.identite {
+				color: @cidentite;
+				&.is-selected {
+					background-color: @cidentite;
+				}
+			}
+			&.numerique {
+				color: @cnumerique;
+				&.is-selected {
+					background-color: @cnumerique;
+				}
+			}
+			&.objet {
+				color: @cobjet;
+				&.is-selected {
+					background-color: @cobjet;
+				}
+			}
+
+			&.is-selected {
+				color: #fff;
+			}
+
+		}
+
+		.item {
+
+			display: inline-block;
+			margin-top: 11px;
+			padding: 8px 14px;
+			font-size: 1rem;
+			line-height: 1.4;
+
+			.inlinesvg.js & {
+				cursor: pointer;
+			}
+
+			a {
+				text-decoration: none;
+				color: #303030;
+			}
+
+		}
+
+	}
+}
+
+
+/* ==========================================================================
+						Conteneur de l'article et article
+   ========================================================================== */
+
+.conteneurProjet {
+	position: relative;
+	height: 0px;
+	overflow: hidden;
+	transition: height 0s, margin-bottom .6s ease-out, background-color 0s ease-out;
+
+	&.is-loading {
+		margin-bottom: 50px;
+		height: 200px;
+		transition: height .4s linear, margin-bottom .6s ease-out, background-color 0s ease-out;
+	}
+
+	&.is-filling {
+		height: 1440px;
+		transition: height .4s linear;
+	}
+	&.is-filled {
+		height: auto;
+		margin-bottom: 50px;
+		transition: height 0s;
+	}
+
+}
+
+.conteneurProjet.is-loading article.projet {
+	background-color: transparent;
+	transition: background-color 0s ease-out;
+}
+
+
+article.projet {
+	padding-top:50px;
+	padding-bottom:50px;
+	background-color: #fff;
+
+	transition: background-color .4s ease-out;
+}
+
+
+.conteneurProjet .border {
+	position: absolute;
+	width: 100%;
+
+	border-bottom: 4px solid @clgrey;
+	height: 2px;
+
+	z-index: 13;
+
+	&.borderTop {
+		top:0;
+		background-color:white;
+
+		display: none;
+
+
+		.is-project &.is-sticky {
+			position: fixed;
+			height: 56px;
+		}
+
+	}
+	&.borderBottom {
+		bottom:0;
+	}
+}
+
+
+
+
+
+.conteneurProjet svg {
+	display: block;
+	width: 200px;
+	height: 200px;
+	padding: 0px;
+	overflow: hidden;
+	margin: auto;
+	opacity: 0;
+
+	fill: #fff;
+	stroke: transparent;
+
+	transition: opacity 1s;
+
+	line {
+		stroke: transparent !important;
+	}
+	circle {
+		fill: transparent !important;
+	}
+
+}
+
+
+
+
+/* ==========================================================================
+								Menu avec icônes
+   ========================================================================== */
+
+.grilleIcones{
+
+	display: block;
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+
+}
+
+.grilleIcones .apercu {
+
+	display: inline-block;
+	position: relative;
+	font-size: 0;
+
+	margin: 0;
+
+	width: 200px;
+	height: 200px;
+	padding: 0px;
+	overflow: hidden;
+
+	transition: background-color 1.5s, width 1s;
+
+	svg {
+		width: 200px;
+		height: 200px;
+		transition: 1s;
+	}
+
+	&.is-active, &.is-filtered {
+
+		// cercles
+		circle {
+			fill:transparent !important;
+			transition: 0s;
+		}
+
+		// lignes
+		line {
+			stroke: transparent !important;
+			stroke-width: 1px ;
+			transition: 0s;
+		}
+
+		// lettres
+		.polygones path, .polygones rect, .polygones polygon {
+			fill: #fff;
+			stroke: #fff;
+			stroke-width:1.2px;
+
+			.animation( strokeColor .4s );
+		}
+
+		.keyframes(~'strokeColor, 0%{ stroke-width: transparent !important } 5%{ stroke: #fff } 100%{ stroke: transparent !important }');
+
+		// svg complet
+		svg {
+			.transform( translate(0,-10px) );
+			transition: 1s 0s;
+		}
+
+		.titreProjet {
+			bottom:5px;
+			opacity: 1;
+			transition: bottom .5s .2s, opacity .4s;
+
+			h3 {
+				margin: 0;
+				margin-bottom: 5px;
+				transition: margin .4s;
+			}
+		}
+	}
+
+	&.is-active {
+		transition: background-color 0s;
+	}
+
+	&.is-filtered {
+		transition: background-color 1s, width 1s;
+
+		.polygones path, .polygones rect, .polygones polygon, {
+			fill: transparent;
+		}
+
+		&.is-active {
+			.polygones path, .polygones rect, .polygones polygon {
+				fill: #fff;
+				stroke: #fff;
+				stroke-width:1.2px;
+
+				.animation( strokeColor .4s );
+			}
+		}
+	}
+
+	&.is-current {
+
+		circle {
+			fill:transparent !important;
+			stroke:transparent !important;
+		}
+
+		path, rect, polygon {
+			fill:transparent !important;
+			stroke:#fff !important;
+		}
+	}
+
+	&.is-viewed {
+		circle {
+			fill:transparent !important;
+		}
+		line {
+			stroke: transparent !important;
+		}
+		path, rect, polygon {
+			stroke: transparent !important;
+		}
+	}
+	&.is-viewed {
+		background-color: transparent !important;
+
+		.titreProjet {
+			color: #333;
+		}
+	}
+
+
+	circle {
+		fill:#fff;
+		color: #fff;
+		stroke: #fff;
+		stroke-width: 0;
+		transition: 1s;
+	}
+	line {
+		stroke-miterlimit: 10;
+		color: #fff;
+		stroke: #fff;
+		transition: 1s;
+	}
+
+	path, rect, polygon {
+		fill: transparent;
+		stroke: transparent;
+		z-index: 0;
+		transition: fill .8s .2s, stroke 0s;
+	}
+
+}
+
+.apercu .titreProjet {
+	position: absolute;
+	display: block;
+	bottom:-70px;
+	left:0;
+	color: #fff;
+
+	font-size: 14px;
+	line-height: 1.41;
+	font-weight: normal;
+
+	width: 200px;
+	padding: 0 10px;
+
+	opacity: .4;
+
+	text-align: center;
+	transition: bottom .6s, opacity .2s;
+
+	h3 {
+		text-transform: lowercase;
+		margin-bottom: -20px;
+		.audimat-reg;
+
+		transition: margin .4s;
+	}
+}
+
+
+/* ==========================================================================
+									Projets
+   ========================================================================== */
+
+.grilleIcones .apercu[data-categorie = identite] {
+	color: @cidentite;
+	stroke: @clinestroke;
+	&.is-active, &.is-filtered:not(.is-viewed) {
+		background-color: @cidentite;
+	}
+
+	&.is-viewed {
+		path,rect, polygon {
+			fill: @cidentite !important;
+		}
+	}
+}
+.grilleIcones .apercu[data-categorie = edition] {
+	color: @cedition;
+	stroke: @clinestroke;
+	&.is-active, &.is-filtered:not(.is-viewed) {
+		background-color: @cedition;
+	}
+
+	&.is-viewed {
+		path,rect, polygon {
+			fill: @cedition !important;
+		}
+	}
+}
+.grilleIcones .apercu[data-categorie = numerique] {
+	color: @cnumerique;
+	stroke: @clinestroke;
+	&.is-active, &.is-filtered:not(.is-viewed) {
+		background-color: @cnumerique;
+	}
+
+	&.is-viewed {
+		path,rect, polygon {
+			fill: @cnumerique !important;
+		}
+	}
+}
+.grilleIcones .apercu[data-categorie = objet] {
+	color: @cobjet;
+	stroke: @clinestroke;
+	&.is-active, &.is-filtered:not(.is-viewed) {
+		background-color: @cobjet;
+	}
+
+	&.is-viewed {
+		path,rect, polygon {
+			fill: @cobjet !important;
+		}
+	}
+}
+
+.no-inlinesvg {
+	.grilleIcones .apercu[data-categorie = identite] {
+		background-color: @cidentite;
+	}
+	.grilleIcones .apercu[data-categorie = edition] {
+		background-color: @cedition;
+	}
+	.grilleIcones .apercu[data-categorie = numerique] {
+		background-color: @cnumerique;
+	}
+	.grilleIcones .apercu[data-categorie = objet] {
+		background-color: @cobjet;
+	}
+}
+
+/*
+#ministere {
+	color: @cministere;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @cministere;
+	}
+}
+
+#airfrance {
+	color: @cairfrance;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @cministere;
+	}
+}
+
+#benoitgaignard {
+	color: @cbenoitgaignard;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @cbenoitgaignard;
+	}
+}
+
+#typo3D {
+	color: @ctypo3D;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @ctypo3D;
+	}
+}
+
+#macu {
+	color: @cmacu;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @cmacu;
+	}
+}
+
+#troishommes {
+	color: @ctroishommes;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @ctroishommes;
+	}
+}
+
+#goutte {
+	color: @cgoutte;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @cgoutte;
+	}
+}
+
+#photomaton {
+	color: @cphotomaton;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @cphotomaton;
+	}
+}
+
+#trendiseases {
+	color: @ctrendiseases;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @ctrendiseases;
+	}
+}
+
+#illustrations {
+	color: @cillustrations;
+	stroke: @clinestroke;
+
+	&.is-active {
+		background-color: @cillustrations;
+	}
+}
+
+#alice {
+	color: @calice;
+	stroke: @clinestroke;
+	&.is-active {
+		background-color: @calice;
+	}
+}
+
+#memoire {
+	color: @cmemoire;
+	stroke: @clinestroke;
+	&.is-active {
+		background-color: @cmemoire;
+	}
+}
+
+#influencedeslivres {
+	color: @cinfluencedeslivres;
+	stroke: @clinestroke;
+	&.is-active {
+		background-color: @cinfluencedeslivres;
+	}
+}
+
+#fourberies {
+	color: @cfourberies;
+	stroke: @clinestroke;
+	&.is-active {
+		background-color: @cinfluencedeslivres;
+	}
+}
+
+#villes {
+	color: @cvilles;
+	stroke: @clinestroke;
+	&.is-active {
+		background-color: @cvilles;
+	}
+}
+
+#series {
+	color: @cseries;
+	stroke: @clinestroke;
+	&.is-active {
+		background-color: @cseries;
+	}
+}
+*/
+
+/* ==========================================================================
+								Pages projets
+   ========================================================================== */
+
+
+
+article.projet {
+}
+
+article.projet .image img {
+	max-width: 100%;
+	height: auto;
+
+}
+
+figure {
+	margin-bottom: 5%;
+
+}
+
+.groupeimg {
+	margin-right: -5px;
+	margin-left: -5px;
+
+	> * {
+		display: block;
+		float:left;
+		border: 5px solid white;
+	}
+}
+
+/*
+.groupeimg div {
+	display: inline-block;
+
+	.display(flex);
+
+	margin-right: 0%;
+
+	height: 100%;
+	border: 12px solid white;
+
+	margin-bottom: 5%;
+
+	vertical-align: top;
+
+
+}
+*/
+
+/*
+
+.groupeimg figure {
+	display: inline-block;
+	border: 5px solid white;
+
+}
+
+.groupeimg figure img {
+width:100%;
+}
+*/
+
+.groupeimg .un {
+	width: 16.66%;
+}
+
+.groupeimg .unquatre {
+	width: 25%;
+}
+
+.groupeimg .deux {
+	width: 33.33%;
+}
+
+
+.groupeimg .trois {
+	width: 50%;
+}
+
+.groupeimg .quatre {
+	width: 66.66%;
+}
+
+.groupeimg .cinq {
+	width: 83.55%;
+}
+
+.groupeimg .six {
+	width: 100%;
+}
+
+.gauche {
+	width: 33%;
+	margin-right: 1%;
+}
+
+.droite {
+	width: 66%;
+}
+
+.infos {
+	margin-bottom: 5%;
+}
+
+.titrage, .texte {
+	font-size: 0;
+}
+
+
+.titre, .detail {
+	display: inline-block;
+	font-size : 1.2rem;
+	font-size: 20px;
+	font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+
+
+.texte p, .texte ul {
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 22px;
+	line-height: 1.2rem;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.texte ul {
+	padding: 0;
+	margin-top:0;
+	margin-bottom: 0;
+	margin-left: 0;
+	list-style: none;
+}
+
+
+
+/* ==========================================================================
+									À propos
+   ========================================================================== */
+
+
+
+.dates{
+	font-weight: normal;
+font-size: 15px;
+
+}
+
+.lieu{
+	font-weight: normal;
+	font-size: 18px;
+
+	color:#92CCAC;
+    letter-spacing: 0.2px;
+/* 	line-height: 20px; */
+}
+
+.description{
+font-size: 15px;
+/* 	line-height: 18px; */
+}
+
+.propos h2{
+	margin-bottom: 6%;
+}
+
+.propos .dernier {
+	margin-bottom: 15%;
+}
+
+.propos a {
+	text-decoration: underline;
+	color:black;
+}
+
+.propos a:hover {
+	text-decoration: underline;
+	color:#EA5475;
+}
+
+
+.propos figure.debut {
+	height: 500px;
+	background-color: #92CCAC;
+}
+
+
+.propos #logo path, .propos #logo polygon, .propos #logo rect {
+		fill: #92CCAC !important;
+}
+
+
+.propos .bouton a,
+.propos footer a,
+.propos h1,
+.propos .titre, .propos .detail
+ {
+	color:#EA5475;
+}
+
+
+
+/* ==========================================================================
+								bas de page
+   ========================================================================== */
+
+.pied{
+	margin-top: 60px;
+	margin-bottom: 10px;
+}
+
+footer{
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+footer a {
+		color: #303030;
+}
+
+
+/* ==========================================================================
+								Animation
+   ========================================================================== */
+.js {
+	#logo {
+		opacity: 0;
+
+		svg {
+			overflow: visible;
+		}
+	}
+	.tagline {
+		opacity: 0;
+	}
+	#entete .containerLogoTagline {
+		border-bottom-color: transparent;
+	}
+	.listCategories .item {
+		opacity: 0;
+	}
+}
+
+
+
+/*
+
+.js .is-loaded #logo {
+	opacity: 1;
+	transition: opacity .4s;
+}
+.js .is-loaded .tagline {
+	opacity: 1;
+	transition: opacity .8s;
+}
+
+*/

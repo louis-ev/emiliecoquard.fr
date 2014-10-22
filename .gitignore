@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+
+node_modules
+src/bower_components
+
+deploy
+dist
+
+src/font
+src/img

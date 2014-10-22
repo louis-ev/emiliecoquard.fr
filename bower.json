@@ -1,0 +1,7 @@
+{
+  "name": "proto-03",
+  "version": "0.0.0",
+  "dependencies": {
+    "lesshat": "~3.0.0"
+  }
+}
