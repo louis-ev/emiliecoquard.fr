@@ -123,7 +123,6 @@ html, body {
 
 body {
 	.audimat-reg;
-
 }
 
 html {
@@ -148,6 +147,13 @@ a {
 
 img {
 	display: block;
+}
+
+
+body.is-busy {
+	overflow: hidden;
+	pointer-events: none;
+
 }
 
 
@@ -207,10 +213,12 @@ body.propos ul {
 
 
 #entete {
-	position: relative;
+	position:relative;
+	top:0;
 	margin:auto;
 	text-align: center;
-	height: 290px;
+	// 290 + 60
+	height: 350px;
 	z-index: 150;
 
 
@@ -220,22 +228,28 @@ body.propos ul {
 
 			.conteneurEntete {
 				position: fixed;
-				bottom: 94%;
-				bottom: ~"calc(100% - 50px )";
-				padding-bottom: 5px;
+				border-bottom: 4px solid #fff;
+				top:0;
 			}
 		}
+		.conteneurEntete {
+		}
 
+		.conteneurEntete {
+
+
+		}
 	}
 
 	.conteneurEntete {
+		position: absolute;
 		.conteneur;
-		padding-top: 70px;
-		padding-bottom: 70px;
-		border-bottom: 4px solid #fff;
-		bottom:100%;
+		padding-top: 160px;
+		margin-top:-60px;
+		padding-bottom: 100px;
 		background-color: #fff;
-		transition: bottom 1s ease-out;
+		border-bottom: 0px solid #fff;
+		transition: border .4s;
 	}
 
 	.containerLogoTagline {
@@ -289,11 +303,6 @@ body.propos ul {
 			top:0;
 			z-index: 14;
 
-			.is-project &.is-sticky {
-				position: fixed;
-				top:0;
-				border-bottom:2px solid white;
-			}
 		}
 
 		.categorie {
@@ -361,16 +370,18 @@ body.propos ul {
 	position: relative;
 	height: 0px;
 	overflow: hidden;
+
 	transition: height 0s, margin-bottom .6s ease-out, background-color 0s ease-out;
 
 	&.is-loading {
-		margin-bottom: 50px;
 		height: 200px;
+		margin-bottom: 50px;
 		transition: height .4s linear, margin-bottom .6s ease-out, background-color 0s ease-out;
 	}
 
 	&.is-filling {
 		height: 1440px;
+		margin-bottom: 50px;
 		transition: height .4s linear;
 	}
 	&.is-filled {
@@ -411,12 +422,6 @@ article.projet {
 
 		display: none;
 
-
-		.is-project &.is-sticky {
-			position: fixed;
-			height: 56px;
-		}
-
 	}
 	&.borderBottom {
 		bottom:0;
@@ -429,7 +434,12 @@ article.projet {
 
 .conteneurProjet svg {
 	display: block;
-	width: 200px;
+
+	position: absolute;
+
+	top:0;
+
+	width: 100%;
 	height: 200px;
 	padding: 0px;
 	overflow: hidden;
@@ -450,7 +460,15 @@ article.projet {
 
 }
 
+.conteneurProjet img {
 
+	opacity: 1;
+	transition: .4s ease;
+
+	&.is-hidden {
+		opacity: 0;
+	}
+}
 
 
 /* ==========================================================================
@@ -505,13 +523,12 @@ article.projet {
 		// lettres
 		.polygones path, .polygones rect, .polygones polygon {
 			fill: #fff;
-			stroke: #fff;
 			stroke-width:1.2px;
 
 			.animation( strokeColor .4s );
 		}
 
-		.keyframes(~'strokeColor, 0%{ stroke-width: transparent !important } 5%{ stroke: #fff } 100%{ stroke: transparent !important }');
+		.keyframes(~'strokeColor, 0%{ stroke: transparent !important } 5%{ stroke: #fff } 100%{ stroke: transparent !important }');
 
 		// svg complet
 		svg {
@@ -540,7 +557,7 @@ article.projet {
 		transition: background-color 1s, width 1s;
 
 		.polygones path, .polygones rect, .polygones polygon, {
-			fill: transparent;
+			fill: #fff;
 		}
 
 		&.is-active {
@@ -576,6 +593,7 @@ article.projet {
 		}
 		path, rect, polygon {
 			stroke: transparent !important;
+			stroke-width: 0px !important;
 		}
 	}
 	&.is-viewed {
@@ -1098,18 +1116,3 @@ footer a {
 		opacity: 0;
 	}
 }
-
-
-
-/*
-
-.js .is-loaded #logo {
-	opacity: 1;
-	transition: opacity .4s;
-}
-.js .is-loaded .tagline {
-	opacity: 1;
-	transition: opacity .8s;
-}
-
-*/
