@@ -366,7 +366,7 @@ body.propos ul {
 						Conteneur de l'article et article
    ========================================================================== */
 
-.conteneurProjet {
+.js .conteneurProjet {
 	position: relative;
 	height: 0px;
 	overflow: hidden;
@@ -463,10 +463,19 @@ article.projet {
 .conteneurProjet img {
 
 	opacity: 1;
-	transition: .4s ease;
+	.transition( opacity .4s ease-out, filter .8s linear);
+
 
 	&.is-hidden {
 		opacity: 0;
+	}
+
+	&.is-first {
+	.filter( grayscale(0%) );
+
+		&.is-hidden {
+			.filter( grayscale(100%) );
+		}
 	}
 }
 
@@ -556,8 +565,9 @@ article.projet {
 	&.is-filtered {
 		transition: background-color 1s, width 1s;
 
-		.polygones path, .polygones rect, .polygones polygon, {
-			fill: #fff;
+		.polygones path, .polygones rect, .polygones polygon {
+			fill: transparent;
+			stroke: #fff;
 		}
 
 		&.is-active {
@@ -566,7 +576,7 @@ article.projet {
 				stroke: #fff;
 				stroke-width:1.2px;
 
-				.animation( strokeColor .4s );
+				.animation( strokeColor .1s );
 			}
 		}
 	}
@@ -599,9 +609,6 @@ article.projet {
 	&.is-viewed {
 		background-color: transparent !important;
 
-		.titreProjet {
-			color: #333;
-		}
 	}
 
 
@@ -661,72 +668,72 @@ article.projet {
 									Projets
    ========================================================================== */
 
-.grilleIcones .apercu[data-categorie = identite] {
-	color: @cidentite;
-	stroke: @clinestroke;
-	&.is-active, &.is-filtered:not(.is-viewed) {
-		background-color: @cidentite;
-	}
+.js {
 
-	&.is-viewed {
-		path,rect, polygon {
-			fill: @cidentite !important;
+	.styleApercu( @categorie, @color ) {
+		.grilleIcones .apercu[data-categorie = @{categorie}] {
+
+			color: @color;
+			stroke: @clinestroke;
+			&.is-active, &.is-filtered:not(.is-viewed) {
+				background-color: @color;
+			}
+			&.is-viewed {
+				path,rect, polygon {
+					fill: @color !important;
+				}
+
+				.titreProjet {
+					color: @color;
+				}
+			}
 		}
 	}
-}
-.grilleIcones .apercu[data-categorie = edition] {
-	color: @cedition;
-	stroke: @clinestroke;
-	&.is-active, &.is-filtered:not(.is-viewed) {
-		background-color: @cedition;
-	}
 
-	&.is-viewed {
-		path,rect, polygon {
-			fill: @cedition !important;
-		}
-	}
-}
-.grilleIcones .apercu[data-categorie = numerique] {
-	color: @cnumerique;
-	stroke: @clinestroke;
-	&.is-active, &.is-filtered:not(.is-viewed) {
-		background-color: @cnumerique;
-	}
+	.styleApercu( 'edition', @cedition );
+	.styleApercu( 'identite', @cidentite );
+	.styleApercu( 'numerique', @cnumerique );
+	.styleApercu( 'objet', @cobjet );
 
-	&.is-viewed {
-		path,rect, polygon {
-			fill: @cnumerique !important;
-		}
-	}
-}
-.grilleIcones .apercu[data-categorie = objet] {
-	color: @cobjet;
-	stroke: @clinestroke;
-	&.is-active, &.is-filtered:not(.is-viewed) {
-		background-color: @cobjet;
-	}
-
-	&.is-viewed {
-		path,rect, polygon {
-			fill: @cobjet !important;
-		}
-	}
 }
 
 .no-inlinesvg {
-	.grilleIcones .apercu[data-categorie = identite] {
-		background-color: @cidentite;
+
+	.styleApercu( @categorie, @color ) {
+		.grilleIcones .apercu[data-categorie = @{categorie}] {
+
+			background-color: @color;
+
+		}
 	}
-	.grilleIcones .apercu[data-categorie = edition] {
-		background-color: @cedition;
+
+	.styleApercu( 'edition', @cedition );
+	.styleApercu( 'identite', @cidentite );
+	.styleApercu( 'numerique', @cnumerique );
+	.styleApercu( 'objet', @cobjet );
+
+}
+
+.no-js {
+
+	.styleApercu( @categorie, @color ) {
+		.grilleIcones .apercu[data-categorie = @{categorie}] {
+
+			line {
+				stroke: #000;
+			}
+			circle {
+				fill: @color;
+			}
+
+		}
 	}
-	.grilleIcones .apercu[data-categorie = numerique] {
-		background-color: @cnumerique;
-	}
-	.grilleIcones .apercu[data-categorie = objet] {
-		background-color: @cobjet;
-	}
+
+	.styleApercu( 'edition', @cedition );
+	.styleApercu( 'identite', @cidentite );
+	.styleApercu( 'numerique', @cnumerique );
+	.styleApercu( 'objet', @cobjet );
+
 }
 
 /*
@@ -878,11 +885,29 @@ article.projet {
 article.projet {
 }
 
-article.projet .image img {
+article.projet img {
 	max-width: 100%;
 	height: auto;
 
 }
+
+.styleArticle( @categorie, @color ) {
+	article.projet[data-categorie = @{categorie}] {
+
+		figure {
+				background-color: @color;
+		}
+
+	}
+}
+
+.styleArticle( 'edition', @cedition );
+.styleArticle( 'identite', @cidentite );
+.styleArticle( 'numerique', @cnumerique );
+.styleArticle( 'objet', @cobjet );
+
+
+//article.projet[data-categorie = edition]
 
 figure {
 	margin-bottom: 5%;

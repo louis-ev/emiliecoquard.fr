@@ -2,6 +2,7 @@
 	<div class="conteneur">
 		<small style="display:block">© Emilie Coquard</small>
 		<small style="display:block">site réalisé avec <a href="http://www.louiseveillard.com" target="_blank">Louis Eveillard</a></small>
+		<small style="display:block">code sur <a href="https://github.com/louis-ev/emiliecoquard.fr" target="_blank">github</small>
 	</div>
 </footer>
 

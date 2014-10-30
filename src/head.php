@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 
 <head>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Émilie Coquard</title>
+  <title>Émilie Coquard | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="description" content="designer graphique basée à Paris">
