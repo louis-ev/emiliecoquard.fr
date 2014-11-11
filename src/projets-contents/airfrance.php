@@ -2,63 +2,47 @@
 
 	<div class="groupeimg">
 
-	<figure class="deux">
-	<img src="img/Air/afficheAMS.jpg" alt="carte" />
-	</figure>
+		<figure class="deux">
+			<img src="img/air/afficheAMS.jpg" alt="air france" />
+		</figure>
 
-	<figure class="deux">
-	<img src="img/Air/afficheHK.jpg" alt="carte"  />
-	</figure>
+		<figure class="deux">
+			<img src="img/air/afficheHK.jpg" alt="air france"  />
+		</figure>
 
-	<figure class="deux">
-	<img src="img/Air/afficheAMS2.jpg" alt="carte"/>
-	</figure>
+		<figure class="deux">
+			<img src="img/air/afficheAMS2.jpg" alt="air france"/>
+		</figure>
 
 	</div>
 
-<!--
-	<figcaption>
-	Bla bla bla
-	</figcaption>
--->
 
 <header class="titrage">
-	<h1 class="detail gauche">Détails techniques</h1>
-	<h2 class="titre droite">Air France</h2>
+	<h1 class="titre">Air France — Identité visuelle — ESAD, 2012, en collaboration avec <a href="http://alexiadupredoan.free.fr/" target="_blank">Alexia Dupré-Doan</a></h1>
 </header>
 
 
 <section class="texte">
+	<p class="description">
+		Repenser une identité globale pour une entreprise aérienne. Création d'une typographie en référence à la légèreté des avions et d'une gamme colorée pour la diversité des personnes le prenant. L'utilisation des codes de géolocalisation pour la gamme colorée permet de couvrir tous les pays du monde avec leur propre couleur.
+	</p>
 
-
-
-<ul class="gauche infos">
-	<li>Identité graphique sur divers supports</li>
-	<li>Projet en collaboration avec Alexia Dupré-doan</li>
-
-</ul>
-
-<p class="droite infos">
-
-	&not; Repenser une identité globale pour une entreprise aérienne. Création d'une typographique faisant référence à la légèreté et d'une gamme colorée pour la diversité. Utilisation des codes de géolocalisation permettant de couvrir tous les pays du monde avec leur propre identité.
-</p>
-
-	<figure class="debut">
-	<img src="img/Air/nuances.png" alt="carte" width="100%" height="" />
+	<figure>
+	<img src="img/air/nuances.png" alt="air france" />
 	</figure>
 
-	<figure class="debut">
-	<img src="img/Air/typo.png" alt="carte" width="100%" height="" />
+	<figure>
+	<img src="img/air/typo.png" alt="air france" />
 	</figure>
 
 
-	<figure class="debut">
-	<img src="img/Air/papier2.jpg" alt="carte" width="100%" height="" />
+	<figure>
+	<img src="img/air/air-france.jpg" alt="air france" />
 	</figure>
 
 
-	<figure class="debut">
-	<img src="img/Air/04.jpg" alt="carte" width="100%" height="" />
+	<figure>
+	<img src="img/air/04.jpg" alt="air france" />
 	</figure>
 
 

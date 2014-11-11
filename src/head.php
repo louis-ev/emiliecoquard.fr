@@ -8,23 +8,23 @@
   <title>Émilie Coquard | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="designer graphique basée à Paris">
-  <meta name="author" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Designer graphique indépendante basée à Paris">
+  <meta name="author" content="Émilie Coquard">
+  <meta name="keywords" content="portfolio, design graphique, typographie, modélisation 3d, images génératives">
 
-  <meta name="og:description" content="designer graphique basée à Paris">
-  <meta name="og:url" content="">
-  <meta name="og:image" content="">
-  <meta name="og:type" content="">
-  <meta name="og:site_name" content="">
+  <meta name="og:description" content="Designer graphique indépendante basée à Paris">
+  <meta name="og:url" content="http://emiliecoquard.fr/">
+  <meta name="og:image" content="http://emiliecoquard.fr/img/vignette-e.png">
+  <meta name="og:type" content="website">
+  <meta name="og:site_name" content="Portfolio d'Émilie Coquard, designer graphique basée à Paris">
 
-  <meta name="twitter:title" content="">
+  <meta name="twitter:title" content="Portfolio d'Émilie Coquard, designer graphique basée à Paris">
   <meta name="twitter:description" content="designer graphique basée à Paris">
-  <meta name="twitter:url" content="">
-  <meta name="twitter:image" content="">
-  <meta name="twitter:card" content="">
+  <meta name="twitter:url" content="http://emiliecoquard.fr/">
+  <meta name="twitter:image" content="http://emiliecoquard.fr/img/vignette-e.png">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="">
-  <meta name="twitter:creator" content="">
+  <meta name="twitter:creator" content="Émilie Coquard">
 
   <link rel="icon" type="image/png" href="favicon.png">
 

@@ -1,57 +1,36 @@
 <article class="projet">
 
 
-	<figure class="debut">
-		<img src="img/villes/villes-6.jpg" alt="carte" width="100%" height=""/>
+	<figure>
+		<img src="img/villes/villes1.jpg" alt="villes"/>
 	</figure>
 
-
-
-<!--
-	<figcaption>
-	Bla bla bla
-	</figcaption>
--->
-
 <header class="titrage">
-	<h1 class="detail gauche">Détails techniques</h1>
-	<h2 class="titre droite">Les villes invisibles, Italo Calvino</h2>
+	<h2 class="titre">Les villes invisibles, Italo Calvino — Édition artistique — ESAD, 2011</h2>
 
 </header>
 
 
 <section class="texte">
 
+<p class="description">
 
-
-<ul class="gauche infos">
-	<li>Édition imprimée </li>
-
-</ul>
-
-<p class="droite infos">
-
-	&not; Projet d'édition représentant graphiquement le roman d'Italo Calvino, les villes invisibles. Dans son livre, il décrit 11 villes, pour chacune d'elle, j'ai attribué une couleur qui finit par disparaître à la fin du livre.</li>
+	Projet d'édition représentant graphiquement le roman d'Italo Calvino, les villes invisibles. Dans son livre, il décrit 11 villes, pour chacune d'elle, j'ai attribué une couleur qui finit par disparaître à la fin du livre. Pour faire la couverture du livre, j'ai repris les 11 couleurs, il y a donc 11 couvertures. </li>
 
 </p>
 
-	<figure class="debut">
-		<img src="img/villes/villes-1.jpg" alt="carte" width="100%" height=""/>
+	<figure>
+		<img src="img/villes/villes2.jpg" alt="villes" />
 	</figure>
 
 
-	<figure class="debut">
-		<img src="img/villes/villes-3.jpg" alt="carte" width="100%" height=""/>
+	<figure>
+		<img src="img/villes/villes3.jpg" alt="villes"/>
 	</figure>
 
 
-	<figure class="debut">
-		<img src="img/villes/villes-4.jpg" alt="carte" width="100%" height=""/>
-	</figure>
-
-
-	<figure class="debut">
-		<img src="img/villes/villes-5.jpg" alt="carte" width="100%" height=""/>
+	<figure>
+		<img src="img/villes/villes4.jpg" alt="villes"/>
 	</figure>
 
 

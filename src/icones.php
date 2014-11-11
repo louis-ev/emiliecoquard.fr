@@ -1,9 +1,11 @@
 <div class="grilleIcones">
 
+
+
 	<!-- mémoire DNSEP -->
 	<a class="item apercu" id="memoire" href="memoire.php" data-categorie="edition" data-dashoffset="810">
 		<title id="title" class="titreProjet">
-				Mémoire du DNSEP
+				Mémoire Dataviz, DNSEP, 2013
 		</title>
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -45,10 +47,76 @@
 
 	</a>
 
-	<!-- mémoire DNSEP -->
-	<a class="item apercu" id="dataviz" href="dataviz.php" data-categorie="numerique" data-dashoffset="360">
+
+
+
+
+
+
+
+
+	<!-- Projet DNSEP -->
+	<a class="item apercu" id="influencedeslivres" href="influencedeslivres.php" data-categorie="objet" data-dashoffset="320">
 		<title id="title" class="titreProjet">
-				Datavizualisation
+				Projet Dataviz, DNSEP, 2013
+		</title>
+
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g class="pointsLignes">
+	<g>
+		<line x1="85.561" y1="48.29" x2="85.561" y2="151.71"/>
+		<line x1="85.21" y1="151.5" x2="99.984" y2="151.5"/>
+		<line x1="70.359" y1="166.485" x2="99.908" y2="166.485"/>
+		<line x1="99.908" y1="166.485" x2="114.683" y2="162.507"/>
+		<line x1="114.683" y1="162.507" x2="125.472" y2="151.718"/>
+		<line x1="125.604" y1="151.891" x2="129.589" y2="137.109"/>
+		<line x1="129.597" y1="136.936" x2="129.597" y2="63.064"/>
+		<line x1="129.589" y1="62.887" x2="125.604" y2="48.113"/>
+		<line x1="125.472" y1="48.29" x2="114.683" y2="37.501"/>
+		<line x1="114.984" y1="37.493" x2="100.21" y2="33.507"/>
+		<line x1="99.908" y1="33.516" x2="70.359" y2="33.516"/>
+		<line x1="85.21" y1="48.5" x2="99.984" y2="48.5"/>
+		<circle cx="70.36" cy="33.516" r="4.104"/>
+		<circle cx="99.909" cy="33.516" r="4.104"/>
+		<circle cx="85.597" cy="48.29" r="4.104"/>
+		<circle cx="99.909" cy="48.29" r="4.104"/>
+		<circle cx="114.683" cy="63.064" r="4.103"/>
+		<circle cx="129.457" cy="63.064" r="4.104"/>
+		<circle cx="114.683" cy="136.936" r="4.103"/>
+		<circle cx="129.457" cy="136.936" r="4.104"/>
+		<circle cx="85.597" cy="151.71" r="4.104"/>
+		<circle cx="99.909" cy="151.71" r="4.104"/>
+		<circle cx="70.36" cy="166.485" r="4.104"/>
+		<circle cx="99.909" cy="166.485" r="4.104"/>
+		<circle cx="114.683" cy="37.501" r="4.103"/>
+		<circle cx="125.472" cy="48.29" r="4.104"/>
+		<circle cx="70.359" cy="100.001" r="4.104"/>
+		<circle cx="85.597" cy="100.001" r="4.104"/>
+		<circle cx="114.683" cy="100.001" r="4.104"/>
+		<circle cx="129.575" cy="100.001" r="4.104"/>
+		<circle cx="125.472" cy="151.718" r="4.103"/>
+		<circle cx="114.683" cy="162.507" r="4.103"/>
+	</g>
+</g>
+<g class="polygones">
+	<path id="datavizetalab" d="M99.908,33.512H70.357l0,0v132.979l0,0h29.551c16.32,0,29.551-13.23,29.551-29.551l0,0
+		V63.062l0,0C129.459,46.741,116.229,33.512,99.908,33.512z M114.684,136.94c0,8.158-6.615,14.775-14.775,14.775H85.133V48.288
+		h14.775c8.16,0,14.775,6.614,14.775,14.775V136.94z"/>
+</g>
+</svg>
+
+
+	</a>
+
+
+
+
+
+	<!-- Datavizualisation -->
+<a class="item apercu" id="dataviz" href="dataviz.php" data-categorie="numerique" data-dashoffset="360">
+		<title id="title" class="titreProjet">
+				Datavizualisation, Etalab, 2013
 		</title>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -96,37 +164,60 @@
 </svg>
 	</a>
 
-	<!-- Projet DNSEP -->
-	<a class="item apercu" id="influencedeslivres" href="influencedeslivres.php" data-categorie="objet" data-dashoffset="320">
+
+
+
+
+
+
+
+
+
+	<!-- éditions ministère de la Culture -->
+	<a class="item apercu" id="ministere" href="ministere.php" data-categorie="edition" data-dashoffset="520">
 		<title id="title" class="titreProjet">
-				Influence des livres
+				Éditions, Ministère, 2013
 		</title>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
 	<g>
-		<line x1="92.859" y1="33.5" x2="107.631" y2="33.5"/>
-		<line x1="107.5" y1="33.56" x2="107.5" y2="166.529"/>
-		<circle cx="92.859" cy="33.56" r="4.103"/>
-		<circle cx="92.859" cy="166.529" r="4.103"/>
-		<circle cx="92.859" cy="100.045" r="4.104"/>
-		<circle cx="107.63" cy="33.56" r="4.104"/>
-		<circle cx="107.63" cy="166.529" r="4.104"/>
-		<circle cx="107.631" cy="100.045" r="4.104"/>
+		<line class="st1" x1="72.6" y1="33.5" x2="128.4" y2="33.5"/>
+		<line class="st1" x1="127.5" y1="33.1" x2="127.5" y2="47.9"/>
+		<line class="st1" x1="114.5" y1="92.1" x2="114.5" y2="106.9"/>
+		<line class="st1" x1="86.5" y1="47.3" x2="86.5" y2="91.7"/>
+		<line class="st1" x1="86.5" y1="92.5" x2="114.5" y2="92.5"/>
+		<line class="st1" x1="86.5" y1="107.3" x2="86.5" y2="151.7"/>
+		<line class="st1" x1="87" y1="151.5" x2="128" y2="151.5"/>
+		<line class="st1" x1="127.5" y1="151.1" x2="127.5" y2="165.9"/>
+		<circle class="st2" cx="72" cy="33.3" r="4.1"/>
+		<circle class="st2" cx="72" cy="166.3" r="4.1"/>
+		<circle class="st2" cx="127.8" cy="166.3" r="4.1"/>
+		<circle class="st2" cx="127.8" cy="151.5" r="4.1"/>
+		<circle class="st2" cx="86.7" cy="151.5" r="4.1"/>
+		<circle class="st2" cx="86.7" cy="107.2" r="4.1"/>
+		<circle class="st2" cx="114.6" cy="107.2" r="4.1"/>
+		<circle class="st2" cx="114.6" cy="92.4" r="4.1"/>
+		<circle class="st2" cx="86.7" cy="92.4" r="4.1"/>
+		<circle class="st2" cx="86.7" cy="48.1" r="4.1"/>
+		<circle class="st2" cx="127.8" cy="48.1" r="4.1"/>
+		<circle class="st2" cx="127.8" cy="33.3" r="4.1"/>
+		<circle class="st2" cx="72" cy="99.8" r="4.1"/>
 	</g>
 </g>
 <g class="polygones">
-	<g class="influence">
-		<rect x="92.859" y="33.56" width="14.771" height="132.969"/>
-	</g>
+	<polygon class="st0" points="128,48.5 128,33.7 72.2,33.7 72.2,166.6 72.2,166.6 128,166.6 128,151.8 87,151.8 87,107.6
+		114.9,107.6 114.9,92.8 87,92.8 87,48.5 	"/>
 </g>
 </svg>
 	</a>
 
+
+
 	<!-- site de Benoît Gaignard-->
 	<a class="item apercu" id="benoitgaignard" href="benoitgaignard.php" data-categorie="numerique" data-dashoffset="420">
 		<title id="title" class="titreProjet">
-				Site de Benoit Gaignard
+				Benoit Gaignard, Site web, 2013
 		</title>
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -190,49 +281,12 @@
 </svg>
 	</a>
 
-	<!-- éditions ministère de la Culture -->
-	<a class="item apercu" id="ministere" href="ministere.php" data-categorie="identite" data-dashoffset="520">
-		<title id="title" class="titreProjet">
-				Éditions au Ministère de la Culture et de la Communication
-		</title>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-<g class="pointsLignes">
-	<g>
-		<line class="st1" x1="72.6" y1="33.5" x2="128.4" y2="33.5"/>
-		<line class="st1" x1="127.5" y1="33.1" x2="127.5" y2="47.9"/>
-		<line class="st1" x1="114.5" y1="92.1" x2="114.5" y2="106.9"/>
-		<line class="st1" x1="86.5" y1="47.3" x2="86.5" y2="91.7"/>
-		<line class="st1" x1="86.5" y1="92.5" x2="114.5" y2="92.5"/>
-		<line class="st1" x1="86.5" y1="107.3" x2="86.5" y2="151.7"/>
-		<line class="st1" x1="87" y1="151.5" x2="128" y2="151.5"/>
-		<line class="st1" x1="127.5" y1="151.1" x2="127.5" y2="165.9"/>
-		<circle class="st2" cx="72" cy="33.3" r="4.1"/>
-		<circle class="st2" cx="72" cy="166.3" r="4.1"/>
-		<circle class="st2" cx="127.8" cy="166.3" r="4.1"/>
-		<circle class="st2" cx="127.8" cy="151.5" r="4.1"/>
-		<circle class="st2" cx="86.7" cy="151.5" r="4.1"/>
-		<circle class="st2" cx="86.7" cy="107.2" r="4.1"/>
-		<circle class="st2" cx="114.6" cy="107.2" r="4.1"/>
-		<circle class="st2" cx="114.6" cy="92.4" r="4.1"/>
-		<circle class="st2" cx="86.7" cy="92.4" r="4.1"/>
-		<circle class="st2" cx="86.7" cy="48.1" r="4.1"/>
-		<circle class="st2" cx="127.8" cy="48.1" r="4.1"/>
-		<circle class="st2" cx="127.8" cy="33.3" r="4.1"/>
-		<circle class="st2" cx="72" cy="99.8" r="4.1"/>
-	</g>
-</g>
-<g class="polygones">
-	<polygon class="st0" points="128,48.5 128,33.7 72.2,33.7 72.2,166.6 72.2,166.6 128,166.6 128,151.8 87,151.8 87,107.6
-		114.9,107.6 114.9,92.8 87,92.8 87,48.5 	"/>
-</g>
-</svg>
-	</a>
+
 
 	<!-- Air France -->
 	<a class="item apercu" id="airfrance" href="airfrance.php" data-categorie="identite" data-dashoffset="400">
 		<title id="title" class="titreProjet">
-				Projet d'identité pour Air France
+				Air France, ESAD, 2012
 		</title>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -267,10 +321,48 @@
 
 	</a>
 
+
+
+
+	<!-- Trendiseases -->
+	<a class="item apercu" id="trendiseases" href="trendiseases.php" data-categorie="numerique" data-dashoffset="390">
+		<title id="title" class="titreProjet">
+				Trendiseases, GlobalViz, 2012
+		</title>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g class="pointsLignes">
+	<g>
+		<line x1="129.581" y1="34.015" x2="129.581" y2="48.791"/>
+		<line x1="107.419" y1="48.791" x2="107.419" y2="166.984"/>
+		<line x1="106.886" y1="166.5" x2="92.114" y2="166.5"/>
+		<line x1="129.047" y1="33.5" x2="69.953" y2="33.5"/>
+		<circle cx="92.44" cy="100.206" r="4.104"/>
+		<circle cx="107.211" cy="100.206" r="4.104"/>
+		<circle cx="70.279" cy="33.721" r="4.104"/>
+		<circle cx="70.279" cy="48.496" r="4.104"/>
+		<circle cx="92.44" cy="48.496" r="4.104"/>
+		<circle cx="107.211" cy="48.496" r="4.104"/>
+		<circle cx="92.44" cy="166.69" r="4.104"/>
+		<circle cx="107.211" cy="166.69" r="4.104"/>
+		<circle cx="129.373" cy="33.721" r="4.104"/>
+		<circle cx="129.373" cy="48.496" r="4.104"/>
+	</g>
+</g>
+<g class="polygones">
+	<polygon points="129,33.5 106.834,33.5 92.059,33.5 69.893,33.5 69.893,48.278 92.059,48.278 92.059,166.5
+		106.834,166.5 106.834,48.278 129,48.278 	"/>
+</g>
+</svg>
+	</a>
+
+
+
+
 	<!-- typo 3D -->
 	<a class="item apercu" id="typo3D" href="typo3D.php" data-categorie="objet" data-dashoffset="520">
 		<title id="title" class="titreProjet">
-				Typographie en 3d
+				Delaunay, Typographie 3D, 2011
 		</title>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -341,10 +433,18 @@
 </svg>
 	</a>
 
+
+
+
+
+
+
+
+
 	<!-- MACU -->
 	<a class="item apercu" id="macu" href="macu.php" data-categorie="identite" data-dashoffset="810">
 		<title id="title" class="titreProjet">
-				Affiches pour la Maison de la Culture d'Amiens
+				MCA, ESAD, 2011
 		</title>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -385,65 +485,93 @@
 </svg>
 	</a>
 
-	<!-- trois hommes -->
-	<a class="item apercu" id="troishommes" href="troishommes.php" data-categorie="edition" data-dashoffset="360">
+
+
+
+	<!-- Villes invisibles> -->
+	<a class="item apercu" id="villes" href="villes.php" data-categorie="edition" data-dashoffset="500">
 		<title id="title" class="titreProjet">
-				Trois hommes
+				Les villes invisibles, ESAD, 2011
 		</title>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
 	<g>
-		<line x1="129.5" y1="59.281" x2="129.5" y2="139.719"/>
-		<line x1="129.537" y1="59.575" x2="125.552" y2="44.801"/>
-		<line x1="125.552" y1="44.801" x2="114.763" y2="34.012"/>
-		<line x1="114.763" y1="34.012" x2="99.988" y2="30.026"/>
-		<line x1="129.537" y1="140.014" x2="125.552" y2="154.787"/>
-		<line x1="125.552" y1="154.787" x2="114.763" y2="165.577"/>
-		<line x1="114.763" y1="165.577" x2="99.988" y2="169.561"/>
-		<line x1="85.5" y1="59.281" x2="85.5" y2="139.719"/>
-		<line x1="99.988" y1="30.026" x2="85.214" y2="34.012"/>
-		<line x1="99.988" y1="169.561" x2="85.214" y2="165.577"/>
-		<circle cx="129.537" cy="59.575" r="4.104"/>
-		<circle cx="114.763" cy="34.012" r="4.104"/>
-		<circle cx="125.552" cy="44.801" r="4.103"/>
-		<circle cx="99.989" cy="30.026" r="4.104"/>
-		<circle cx="74.425" cy="44.801" r="4.104"/>
-		<circle cx="85.214" cy="34.012" r="4.104"/>
-		<circle cx="70.44" cy="59.575" r="4.104"/>
-		<circle cx="70.44" cy="99.794" r="4.104"/>
-		<circle cx="85.214" cy="99.794" r="4.104"/>
-		<circle cx="114.763" cy="99.794" r="4.104"/>
-		<circle cx="129.538" cy="99.794" r="4.104"/>
-		<circle cx="70.44" cy="140.014" r="4.104"/>
-		<circle cx="85.214" cy="165.577" r="4.104"/>
-		<circle cx="74.425" cy="154.788" r="4.104"/>
-		<circle cx="99.989" cy="169.561" r="4.104"/>
-		<circle cx="125.552" cy="154.787" r="4.104"/>
-		<circle cx="114.763" cy="165.577" r="4.104"/>
-		<circle cx="129.538" cy="140.014" r="4.104"/>
-		<circle cx="99.989" cy="44.801" r="4.104"/>
-		<circle cx="114.763" cy="59.575" r="4.104"/>
-		<circle cx="85.214" cy="59.575" r="4.104"/>
-		<circle cx="99.989" cy="154.787" r="4.104"/>
-		<circle cx="85.214" cy="140.014" r="4.104"/>
-		<circle cx="114.763" cy="140.014" r="4.104"/>
+		<line x1="129.46" y1="33.665" x2="107.299" y2="166.634"/>
+		<line x1="107.299" y1="166.634" x2="92.526" y2="166.634"/>
+		<line x1="85.139" y1="33.665" x2="99.913" y2="122.311"/>
+		<line x1="129.46" y1="33.665" x2="114.686" y2="33.665"/>
+		<line x1="85.139" y1="33.665" x2="70.364" y2="33.665"/>
+		<circle cx="70.365" cy="33.665" r="4.104"/>
+		<circle cx="85.139" cy="33.665" r="4.104"/>
+		<circle cx="114.686" cy="33.665" r="4.104"/>
+		<circle cx="129.46" cy="33.665" r="4.104"/>
+		<circle cx="99.913" cy="122.311" r="4.103"/>
+		<circle cx="81.449" cy="100.169" r="4.104"/>
+		<circle cx="92.526" cy="77.988" r="4.104"/>
+		<circle cx="107.3" cy="77.988" r="4.104"/>
+		<circle cx="118.376" cy="100.169" r="4.104"/>
+		<circle cx="92.526" cy="166.634" r="4.104"/>
+		<circle cx="107.298" cy="166.634" r="4.104"/>
 	</g>
 </g>
 <g class="polygones">
-	<path d="M129.418,59.456L129.418,59.456c0-16.254-13.176-29.43-29.43-29.43c-5.367,0-10.383,1.459-14.715,3.969
-		c-4.456,2.58-8.166,6.291-10.746,10.746c-2.51,4.331-3.969,9.347-3.969,14.715v80.114c0,5.368,1.459,10.383,3.969,14.715
-		c2.58,4.455,6.29,8.165,10.746,10.745c4.332,2.512,9.348,3.97,14.715,3.97c16.254,0,29.43-13.176,29.43-29.43l0,0V59.456z
-		 M114.703,139.57L114.703,139.57c0,8.127-6.588,14.715-14.715,14.715c-8.127,0-14.715-6.588-14.715-14.715l0,0V59.456l0,0
-		c0-8.127,6.588-14.715,14.715-14.715c8.127,0,14.715,6.588,14.715,14.715l0,0V139.57z"/>
+	<polygon points="115.664,33 100.778,122.333 85.889,33 71,33 93.333,167 108.221,167 130.555,33 	"/>
 </g>
 </svg>
 	</a>
 
+
+
+
+
+
+	<!-- fourberies de Scapin-->
+	<a class="item apercu" id="fourberies" href="fourberies.php" data-categorie="edition" data-dashoffset="460">
+		<title id="title" class="titreProjet">
+				Les Fourberies, ESAD, 2011
+		</title>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g class="pointsLignes">
+	<g>
+		<line x1="129.5" y1="33.113" x2="129.5" y2="47.887"/>
+		<line x1="85.5" y1="48.341" x2="85.5" y2="92.664"/>
+		<line x1="85.5" y1="107.438" x2="85.5" y2="166.536"/>
+		<line x1="114.5" y1="92.613" x2="114.5" y2="107.387"/>
+		<line x1="129.047" y1="33.5" x2="69.953" y2="33.5"/>
+		<line x1="114.274" y1="92.5" x2="84.726" y2="92.5"/>
+		<circle cx="129.504" cy="48.341" r="4.103"/>
+		<circle cx="129.504" cy="33.567" r="4.103"/>
+		<circle cx="70.41" cy="33.567" r="4.104"/>
+		<circle cx="70.41" cy="166.536" r="4.104"/>
+		<circle cx="85.181" cy="166.536" r="4.104"/>
+		<circle cx="85.181" cy="107.438" r="4.104"/>
+		<circle cx="114.729" cy="107.438" r="4.104"/>
+		<circle cx="114.729" cy="92.664" r="4.104"/>
+		<circle cx="85.181" cy="92.664" r="4.104"/>
+		<circle cx="85.181" cy="48.341" r="4.104"/>
+		<circle cx="70.41" cy="100.051" r="4.104"/>
+	</g>
+</g>
+<g class="polygones">
+	<polygon points="129.507,48.278 129.507,33.5 70.397,33.5 70.397,166.504 85.173,166.504 85.173,107.392
+		114.729,107.392 114.729,92.613 85.173,92.613 85.173,48.278 	"/>
+</g>
+</svg>
+	</a>
+
+
+
+
+
+
+
+
 	<!-- Goutte d'eau -->
 	<a class="item apercu" id="goutte" href="goutte.php" data-categorie="objet" data-dashoffset="620">
 		<title id="title" class="titreProjet">
-				Goutte
+		La Goutte d'eau, ESBAM, 2010
 		</title>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -502,42 +630,132 @@
 </svg>
 	</a>
 
-	<!-- fourberies de Scapin-->
-	<a class="item apercu" id="fourberies" href="fourberies.php" data-categorie="edition" data-dashoffset="460">
+
+
+
+
+
+<!-- trois hommes -->
+	<a class="item apercu" id="troishommes" href="troishommes.php" data-categorie="edition" data-dashoffset="360">
 		<title id="title" class="titreProjet">
-				Fourberies
+				Les "O", ESBAM, 2010
 		</title>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
 	<g>
-		<line x1="129.5" y1="33.113" x2="129.5" y2="47.887"/>
-		<line x1="85.5" y1="48.341" x2="85.5" y2="92.664"/>
-		<line x1="85.5" y1="107.438" x2="85.5" y2="166.536"/>
-		<line x1="114.5" y1="92.613" x2="114.5" y2="107.387"/>
-		<line x1="129.047" y1="33.5" x2="69.953" y2="33.5"/>
-		<line x1="114.274" y1="92.5" x2="84.726" y2="92.5"/>
-		<circle cx="129.504" cy="48.341" r="4.103"/>
-		<circle cx="129.504" cy="33.567" r="4.103"/>
-		<circle cx="70.41" cy="33.567" r="4.104"/>
-		<circle cx="70.41" cy="166.536" r="4.104"/>
-		<circle cx="85.181" cy="166.536" r="4.104"/>
-		<circle cx="85.181" cy="107.438" r="4.104"/>
-		<circle cx="114.729" cy="107.438" r="4.104"/>
-		<circle cx="114.729" cy="92.664" r="4.104"/>
-		<circle cx="85.181" cy="92.664" r="4.104"/>
-		<circle cx="85.181" cy="48.341" r="4.104"/>
-		<circle cx="70.41" cy="100.051" r="4.104"/>
+		<line x1="129.5" y1="59.281" x2="129.5" y2="139.719"/>
+		<line x1="129.537" y1="59.575" x2="125.552" y2="44.801"/>
+		<line x1="125.552" y1="44.801" x2="114.763" y2="34.012"/>
+		<line x1="114.763" y1="34.012" x2="99.988" y2="30.026"/>
+		<line x1="129.537" y1="140.014" x2="125.552" y2="154.787"/>
+		<line x1="125.552" y1="154.787" x2="114.763" y2="165.577"/>
+		<line x1="114.763" y1="165.577" x2="99.988" y2="169.561"/>
+		<line x1="85.5" y1="59.281" x2="85.5" y2="139.719"/>
+		<line x1="99.988" y1="30.026" x2="85.214" y2="34.012"/>
+		<line x1="99.988" y1="169.561" x2="85.214" y2="165.577"/>
+		<circle cx="129.537" cy="59.575" r="4.104"/>
+		<circle cx="114.763" cy="34.012" r="4.104"/>
+		<circle cx="125.552" cy="44.801" r="4.103"/>
+		<circle cx="99.989" cy="30.026" r="4.104"/>
+		<circle cx="74.425" cy="44.801" r="4.104"/>
+		<circle cx="85.214" cy="34.012" r="4.104"/>
+		<circle cx="70.44" cy="59.575" r="4.104"/>
+		<circle cx="70.44" cy="99.794" r="4.104"/>
+		<circle cx="85.214" cy="99.794" r="4.104"/>
+		<circle cx="114.763" cy="99.794" r="4.104"/>
+		<circle cx="129.538" cy="99.794" r="4.104"/>
+		<circle cx="70.44" cy="140.014" r="4.104"/>
+		<circle cx="85.214" cy="165.577" r="4.104"/>
+		<circle cx="74.425" cy="154.788" r="4.104"/>
+		<circle cx="99.989" cy="169.561" r="4.104"/>
+		<circle cx="125.552" cy="154.787" r="4.104"/>
+		<circle cx="114.763" cy="165.577" r="4.104"/>
+		<circle cx="129.538" cy="140.014" r="4.104"/>
+		<circle cx="99.989" cy="44.801" r="4.104"/>
+		<circle cx="114.763" cy="59.575" r="4.104"/>
+		<circle cx="85.214" cy="59.575" r="4.104"/>
+		<circle cx="99.989" cy="154.787" r="4.104"/>
+		<circle cx="85.214" cy="140.014" r="4.104"/>
+		<circle cx="114.763" cy="140.014" r="4.104"/>
 	</g>
 </g>
 <g class="polygones">
-	<polygon points="129.507,48.278 129.507,33.5 70.397,33.5 70.397,166.504 85.173,166.504 85.173,107.392
-		114.729,107.392 114.729,92.613 85.173,92.613 85.173,48.278 	"/>
+	<path d="M129.418,59.456L129.418,59.456c0-16.254-13.176-29.43-29.43-29.43c-5.367,0-10.383,1.459-14.715,3.969
+		c-4.456,2.58-8.166,6.291-10.746,10.746c-2.51,4.331-3.969,9.347-3.969,14.715v80.114c0,5.368,1.459,10.383,3.969,14.715
+		c2.58,4.455,6.29,8.165,10.746,10.745c4.332,2.512,9.348,3.97,14.715,3.97c16.254,0,29.43-13.176,29.43-29.43l0,0V59.456z
+		 M114.703,139.57L114.703,139.57c0,8.127-6.588,14.715-14.715,14.715c-8.127,0-14.715-6.588-14.715-14.715l0,0V59.456l0,0
+		c0-8.127,6.588-14.715,14.715-14.715c8.127,0,14.715,6.588,14.715,14.715l0,0V139.57z"/>
 </g>
 </svg>
 	</a>
 
+
+
+	<a class="item apercu" id="apropos" href="propos.php" data-categorie="apropos" data-dashoffset="530" style="display: none;">
+		<title id="title" class="titreProjet">
+				À propos
+		</title>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+			<g class="pointsLignes">
+				<g>
+					<line x1="92.859" y1="33.5" x2="107.631" y2="33.5"/>
+					<line x1="107.5" y1="33.56" x2="107.5" y2="166.529"/>
+					<circle cx="92.859" cy="33.56" r="4.103"/>
+					<circle cx="92.859" cy="166.529" r="4.103"/>
+					<circle cx="92.859" cy="100.045" r="4.104"/>
+					<circle cx="107.63" cy="33.56" r="4.104"/>
+					<circle cx="107.63" cy="166.529" r="4.104"/>
+					<circle cx="107.631" cy="100.045" r="4.104"/>
+				</g>
+			</g>
+			<g class="polygones">
+				<g class="influence">
+					<rect x="92.859" y="33.56" width="14.771" height="132.969"/>
+				</g>
+			</g>
+		</svg>
+	</a>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+	<!-- Lettre i -->
+	<!--
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g class="pointsLignes">
+	<g>
+		<line x1="92.859" y1="33.5" x2="107.631" y2="33.5"/>
+		<line x1="107.5" y1="33.56" x2="107.5" y2="166.529"/>
+		<circle cx="92.859" cy="33.56" r="4.103"/>
+		<circle cx="92.859" cy="166.529" r="4.103"/>
+		<circle cx="92.859" cy="100.045" r="4.104"/>
+		<circle cx="107.63" cy="33.56" r="4.104"/>
+		<circle cx="107.63" cy="166.529" r="4.104"/>
+		<circle cx="107.631" cy="100.045" r="4.104"/>
+	</g>
+</g>
+<g class="polygones">
+	<g class="influence">
+		<rect x="92.859" y="33.56" width="14.771" height="132.969"/>
+	</g>
+</g>
+</svg>
+-->
+
+
 	<!-- Portraits graphiques-->
+<!--
 	<a class="item apercu" id="photomaton" href="photomaton.php" data-categorie="numerique" data-dashoffset="360">
 		<title id="title" class="titreProjet">
 				Photomaton
@@ -588,74 +806,12 @@
 </g>
 </svg>
 	</a>
+-->
 
-	<!-- Villes invisibles> -->
-	<a class="item apercu" id="villes" href="villes.php" data-categorie="edition" data-dashoffset="500">
-		<title id="title" class="titreProjet">
-				Villes
-		</title>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-<g class="pointsLignes">
-	<g>
-		<line x1="129.46" y1="33.665" x2="107.299" y2="166.634"/>
-		<line x1="107.299" y1="166.634" x2="92.526" y2="166.634"/>
-		<line x1="85.139" y1="33.665" x2="99.913" y2="122.311"/>
-		<line x1="129.46" y1="33.665" x2="114.686" y2="33.665"/>
-		<line x1="85.139" y1="33.665" x2="70.364" y2="33.665"/>
-		<circle cx="70.365" cy="33.665" r="4.104"/>
-		<circle cx="85.139" cy="33.665" r="4.104"/>
-		<circle cx="114.686" cy="33.665" r="4.104"/>
-		<circle cx="129.46" cy="33.665" r="4.104"/>
-		<circle cx="99.913" cy="122.311" r="4.103"/>
-		<circle cx="81.449" cy="100.169" r="4.104"/>
-		<circle cx="92.526" cy="77.988" r="4.104"/>
-		<circle cx="107.3" cy="77.988" r="4.104"/>
-		<circle cx="118.376" cy="100.169" r="4.104"/>
-		<circle cx="92.526" cy="166.634" r="4.104"/>
-		<circle cx="107.298" cy="166.634" r="4.104"/>
-	</g>
-</g>
-<g class="polygones">
-	<polygon points="115.664,33 100.778,122.333 85.889,33 71,33 93.333,167 108.221,167 130.555,33 	"/>
-</g>
-</svg>
-	</a>
 
-	<!-- Trendiseases -->
-	<a class="item apercu" id="trendiseases" href="trendiseases.php" data-categorie="numerique" data-dashoffset="390">
-		<title id="title" class="titreProjet">
-				Trendiseases
-		</title>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-<g class="pointsLignes">
-	<g>
-		<line x1="129.581" y1="34.015" x2="129.581" y2="48.791"/>
-		<line x1="107.419" y1="48.791" x2="107.419" y2="166.984"/>
-		<line x1="106.886" y1="166.5" x2="92.114" y2="166.5"/>
-		<line x1="129.047" y1="33.5" x2="69.953" y2="33.5"/>
-		<circle cx="92.44" cy="100.206" r="4.104"/>
-		<circle cx="107.211" cy="100.206" r="4.104"/>
-		<circle cx="70.279" cy="33.721" r="4.104"/>
-		<circle cx="70.279" cy="48.496" r="4.104"/>
-		<circle cx="92.44" cy="48.496" r="4.104"/>
-		<circle cx="107.211" cy="48.496" r="4.104"/>
-		<circle cx="92.44" cy="166.69" r="4.104"/>
-		<circle cx="107.211" cy="166.69" r="4.104"/>
-		<circle cx="129.373" cy="33.721" r="4.104"/>
-		<circle cx="129.373" cy="48.496" r="4.104"/>
-	</g>
-</g>
-<g class="polygones">
-	<polygon points="129,33.5 106.834,33.5 92.059,33.5 69.893,33.5 69.893,48.278 92.059,48.278 92.059,166.5
-		106.834,166.5 106.834,48.278 129,48.278 	"/>
-</g>
-</svg>
-	</a>
-
-	<!-- Serie d'éditions -->
-	<a class="item apercu" id="series" href="serie.php" data-categorie="edition" data-dashoffset="580">
+<!-- Serie d'éditions -->
+	<!--
+<a class="item apercu" id="series" href="serie.php" data-categorie="edition" data-dashoffset="580">
 		<title id="title" class="titreProjet">
 				Série
 		</title>
@@ -726,7 +882,12 @@
 </svg>
 	</a>
 
-	<!-- Illustrations -->
+-->
+
+
+
+<!-- Illustrations -->
+<!--
 	<a class="item apercu" id="illustrations" href="illustrations.php" data-categorie="identite" data-dashoffset="530">
 		<title id="title" class="titreProjet">
 				Carnet d'illustrations
@@ -786,7 +947,12 @@
 </svg>
 	</a>
 
+-->
+
+
+
 	<!-- Alice et le fil magique -->
+<!--
 	<a class="item apercu" id="alice" href="alice.php" data-categorie="numerique" data-dashoffset="630">
 		<title id="title" class="titreProjet">
 				Alice
@@ -823,5 +989,4 @@
 </g>
 </svg>
 	</a>
-
-</div>
+-->

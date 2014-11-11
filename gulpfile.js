@@ -31,7 +31,9 @@ var pho = require('pho-devstack')(gulp, {
     /* Option list: https://github.com/kangax/html-minifier#options-quick-reference */
     enabled: false
   },
-  copy: [ '*.php', 'scripts/main.js', 'scripts/_plugins.js', 'templates-parts/*', 'projets-contents/*', 'scripts/vendor/jquery-1.11.0.min.js']
+  copy: [ 'scripts/main.js', 'scripts/_plugins.js', 'scripts/vendor/jquery-1.11.0.min.js']
+
+//   copy: [ '*.php', 'scripts/main.js', 'scripts/_plugins.js', 'templates-parts/*', 'projets-contents/*', 'scripts/vendor/jquery-1.11.0.min.js']
 });
 
 // If needed, redefine tasks here

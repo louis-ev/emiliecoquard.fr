@@ -1,93 +1,38 @@
 <article class="projet">
 
 
-	<figure class="debut">
-	<img src="img/ministere/ministere-1.jpg" alt="carte" width="100%" height=""/>
+	<figure>
+		<img src="img/ministere/ministere2.jpg" alt="ministère"/>
 	</figure>
 
-
-
-<!--
-	<figcaption>
-	Bla bla bla
-	</figcaption>
--->
-
-<header class="titrage">
-	<h1 class="detail gauche">Détails techniques</h1>
-	<h2 class="titre droite">Éditions</h2>
-
-</header>
-
-
-<section class="texte">
-
-
-
-<ul class="gauche infos">
-	<li>Divers documents et formats </li>
-
-</ul>
-
-<p class="droite infos">
-
-	&not; Maquettage et mise en page de documents au sein du ministère de la Culture et de la Communication en collaboration avec la Délégation de la langue française et aux langues de France.</li>
-
-</p>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-2.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-3.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-4.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-5.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-6.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-7.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-8.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-9.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-10.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-11.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-12.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-13.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-<figure class="debut">
-	<img src="img/ministere/ministere-14.jpg" alt="carte" width="100%" height=""/>
-</figure>
-
-
-</section>
+	<header>
+		<h1 class="titre">Éditions de la DGLFLF — Ministère de la Culture et de la Communication, 2013</h1>
+	
+	</header>
+	
+	
+	<section class="texte">
+	
+		<p class="description">
+		
+			Maquetage et mise en page de documents au sein du ministère de la Culture et de la Communication en collaboration avec la Délégation de la langue française et aux langues de France.</li>
+		
+		</p>
+		
+			<figure>
+				<img src="img/ministere/ministere1.jpg" alt="ministère"/>
+			</figure>
+			
+			<figure>
+				<img src="img/ministere/ministere3.jpg" alt="ministère"/>
+			</figure>
+			
+			<figure>
+				<img src="img/ministere/ministere4.jpg" alt="ministère"/>
+			</figure>
+	
+	
+	
+	</section>
 
 </article>

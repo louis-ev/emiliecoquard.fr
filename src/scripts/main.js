@@ -179,7 +179,7 @@ function loadNewProject( $that ) {
 
 	// changer l'historique et le titre, récupérer la categorie et l'attribuer au conteneur du projet complet
 	history.pushState( projectlink, document.title, projectlink);
-	$('head > title').html('Émilie Coquard | ' + projecttitle);
+	$("head > title").html('Émilie Coquard | ' + projecttitle);
 	$(".conteneurProjet article.projet").attr("data-categorie", projectCategorie);
 
 	// copierle svg, le placer dn le conteneur
@@ -210,7 +210,7 @@ function loadNewProject( $that ) {
 			.attr("stroke-dasharray", projectDashOffset )
 			.attr("stroke-dashoffset", projectDashOffset )
 			.transition()
-			.duration(1000)
+			.duration( 800)
 			.ease("in-out")
 			.attr("stroke-dashoffset", 0 )
 			.each( "end", function() {
@@ -222,7 +222,7 @@ function loadNewProject( $that ) {
 					return;
 				} else {
 					d3.select(this).transition()
-						.duration(1000)
+						.duration( 800)
 						.attr("stroke-dashoffset", -projectDashOffset )
 						.each( "end", function() {
 							polygonStrokeAnimation();
@@ -236,7 +236,7 @@ function loadNewProject( $that ) {
 		d3.select( ".conteneurProjet svg" ).select(".polygones")
 			.style("fill", "rgba(255,255,255,0)")
 			.transition()
-			.duration(800)
+			.duration( 600)
 			.style("fill", "rgba(255,255,255,1)")
 			.each( "end", function() {
 				loadProjectContent();
@@ -251,7 +251,7 @@ function loadNewProject( $that ) {
 		$(".conteneurProjet").removeClass("is-loading").addClass("is-filling").find("svg")
 			.transition(
 				{ y : -200 },
-				600,
+				400,
 				'ease',
 				function() {
 					$(this).remove();
@@ -301,57 +301,69 @@ function loadNewProject( $that ) {
 		// compter le nombre d'images à charger
 		//console.log( $data.find("img").length );
 
+		console.log( $data );
+
 		// récupérer le 3 premières image
 		var $imagesToLoad = $data.find("img").slice(0,3);
 		// ... au cas où il y en aurait moins de 3 dans l'article
 		var $remainingImages = $imagesToLoad.length;
 
 		// pour chaque, redonner la bonne source à partir de data-src, et attacher un événement "au chargement de l'image"
-		$imagesToLoad.each( function() {
-			$(this).attr("src", $(this).data("src") );
-			imagesLoaded ( $(this) , function() {
+		if( $remainingImages > 0 ) {
 
-				// pour chaque image, réduire le compteur d'images restantes à charger
-				$remainingImages--;
-				//console.log( "$remainingImages : "+ $remainingImages );
+			$imagesToLoad.each( function() {
 
-				// si on atteint 0 (plus d'images à charger donc)
-				if ( $remainingImages === 0 ) {
+				$(this).attr("src", $(this).data("src") );
 
-					//console.time("Image manipulation");
+				imagesLoaded ( $(this) , function() {
 
-					// charger toutes les autres images
-					$data.find("img").each(function( index ) {
-						$this = $(this);
+					// pour chaque image, réduire le compteur d'images restantes à charger
+					$remainingImages--;
+					//console.log( "$remainingImages : "+ $remainingImages );
 
-						if( index < 3 ) {
-							// annoter la première (pour animation dans CSS)
-							$this.addClass("is-first");
-							$this.addClass("is-hidden");
-						}
+					// si on atteint 0 (plus d'images à charger donc)
+					if ( $remainingImages === 0 ) {
 
-						// les passer en invisibles (désactiver car trop couteux en performance)
-						//$this.addClass("is-hidden");
+						//console.time("Image manipulation");
 
-						// les charger en remettant leur source
-						if ( $this.attr("src") === undefined ) {
-							$this.attr("src", $this.data("src") );
-						}
+						// charger toutes les autres images
+						$data.find("img").each(function( index ) {
+							$this = $(this);
 
-					});
+							if( index < 3 ) {
+								// annoter la première (pour animation dans CSS)
+								$this.addClass("is-first");
+								$this.addClass("is-hidden");
+							}
 
-					// placer le contenu dans offscreenDump
-					$('.offscreenDump').html($data);
+							// les passer en invisibles (désactiver car trop couteux en performance)
+							//$this.addClass("is-hidden");
 
-					// say it's ready, pour indiquer à l'animation d3 de démarrer quand elle veut
-					$('.offscreenDump article').addClass("is-ready");
+							// les charger en remettant leur source
+							if ( $this.attr("src") === undefined ) {
+								$this.attr("src", $this.data("src") );
+							}
 
-					//console.timeEnd("Image manipulation");
+						});
 
-				}
+						// placer le contenu dans offscreenDump
+						$('.offscreenDump').html($data);
+
+						// say it's ready, pour indiquer à l'animation d3 de démarrer quand elle veut
+						$('.offscreenDump article').addClass("is-ready");
+
+						//console.timeEnd("Image manipulation");
+
+					}
+				});
 			});
-		});
+		} else {
+			// placer le contenu dans offscreenDump
+			$('.offscreenDump').html($data);
 
+			// say it's ready, pour indiquer à l'animation d3 de démarrer quand elle veut
+			$('.offscreenDump article').addClass("is-ready");
+		}
 	});
 
 }
@@ -360,14 +372,43 @@ function loadNewProject( $that ) {
 function onIconEvents( $this ) {
 
 	$this.on('mouseenter', function(e) {
+
 		$that = $(this);
 		$that.addClass("is-active");
-	});
 
+
+		link = $that;
+		//create .ink element if it doesn't exist
+		if(link.find(".ink").length == 0)
+			link.append("<span class='ink'></span>");
+
+		ink = link.find(".ink");
+		//incase of quick double clicks stop the previous animation
+		ink.removeClass("animate");
+
+		//set size of .ink
+		if(!ink.height() && !ink.width())
+		{
+			//use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.
+			d = Math.max(link.outerWidth(), link.outerHeight());
+			ink.css({height: d, width: d});
+		}
+
+		//get click coordinates
+		//logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;
+		x = e.pageX - link.offset().left - ink.width()/2;
+		y = e.pageY - link.offset().top - ink.height()/2;
+
+		//set the position and add class .animate
+		ink.css({top: y+'px', left: x+'px'}).addClass("animate");
+
+	});
 
 	$this.on('mouseleave', function(e) {
 		$that = $(this);
 		$that.removeClass("is-active");
+
+		$that.find(".ink");
 	});
 
 	$this.on('click', function(e) {
@@ -375,9 +416,34 @@ function onIconEvents( $this ) {
 		$that = $(this);
 		e.preventDefault();
 
+		// envoyer à google analytics l'info de chargement
+		ga('send', 'pageview', $that.attr("href") );
 		loadNewProject( $that );
 
+
 	});
+}
+
+function onPropos() {
+
+	$("#entete .tagline a").on('click', function(e) {
+
+		$that = $(this);
+		e.preventDefault();
+
+		// load la case invisible
+		var $projetIconDemande = $(".grilleIcones .item#apropos");
+		// si il y en a un qui correspond, on le charge
+		if ( $projetIconDemande.length ) {
+
+			// envoyer à google analytics l'info de chargement
+			ga('send', 'pageview', $that.attr("href") );
+			loadNewProject( $projetIconDemande );
+		}
+
+
+	});
+
 }
 
 function revealImages( scrollfromtop ) {
@@ -442,7 +508,7 @@ function isBodyBusy() {
 function closeProject() {
 
 	$(".conteneurProjet article").empty();
-	$(".conteneurProjet").removeClass("is-filled is-filling");
+	$(".conteneurProjet").removeClass("is-loading is-filled is-filling");
 	$('body').removeClass("is-busy is-project");
 
 	$("#entete .conteneurEntete").css({ y: 0 });
@@ -514,7 +580,7 @@ var gotoByScroll = function ( $eles ) {
 function checkHash() {
 
 	var path = window.location.pathname.substring( window.location.pathname.lastIndexOf("/") + 1 );
-	if(path !== 'propos.php' && path !== '' && path !== '/'){
+	if(path !== '' && path !== '/'){
 		return path;
 	}
 
@@ -562,7 +628,7 @@ $("document").ready( function() {
 		});
 	});
 
-
+	onPropos();
 
 	/****************************************************************************
 		ANIMATE ALL THE THINGS!
@@ -617,7 +683,7 @@ $("document").ready( function() {
 	});
 
 	/****************************************************************************
-		HASH Check : si il y a un projet réquisitionner, le charger de 0 en ajax
+		HASH Check : si il y a un projet réquisitionné, le charger de 0 en ajax
 	 ***************************************************************************/
 
 	// quel lien a été demandé ?

@@ -1,7 +1,7 @@
-<article
+<article class="projet apropos">
 	<div class="fb-like" style="vertical-align:middle;" data-href="https://www.facebook.com/emiliecoquardgraohiste" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
 
-	<div class="groupeimg">
+	<div class="colonnes">
 
 		<div class="deux">
 

@@ -2,7 +2,6 @@
 	<div class="conteneur">
 		<small style="display:block">© Emilie Coquard</small>
 		<small style="display:block">site réalisé avec <a href="http://www.louiseveillard.com" target="_blank">Louis Eveillard</a></small>
-		<small style="display:block">code sur <a href="https://github.com/louis-ev/emiliecoquard.fr" target="_blank">github</small>
 	</div>
 </footer>
 
@@ -11,13 +10,11 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
 <script src="scripts/_plugins.js"></script>
 <script src="scripts/main.js"></script>
-<!-- substitute:livereload -->
-<!-- Google Analytics -->
 <script>
 (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
 function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
 e=o.createElement(i);r=o.getElementsByTagName(i)[0];
 e.src='//www.google-analytics.com/analytics.js';
 r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-ga('create','<!-- substitute:analytics -->');ga('send','pageview');
+ga('create','UA-12088022-3');ga('send','pageview');
 </script>

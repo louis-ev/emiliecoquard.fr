@@ -1,43 +1,30 @@
 <article class="projet">
-	<figure class="debut">
-	<img src="img/benoit/accueil.jpg" alt="menu" width="100%" height="" />
+
+	<figure>
+		<img src="img/benoit/accueil2.jpg" alt="menu" />
 	</figure>
-
-<!--
-	<figcaption>
-	Bla bla bla
-	</figcaption>
--->
-
-<header class="titrage">
-	<h1 class="detail gauche">Détails techniques</h1>
-	<h2 class="titre droite">Benoît Gaignard – Designer d'objet</h2>
-</header>
-
-
-<section class="texte">
-
-
-
-<ul class="gauche infos">
-	<li>Site responsive sur tous les devices.</li>
-	<li></li>
-</ul>
-
-<p class="droite infos">
-
-	&not; De la maquette à la programmation du site, j'ai travaillé en étroite collaboration avec le designer Benoît Gaignard. Vous trouverez ces créations sur son <a href="http://benoitgaignard.com/" target="_blank">site.</a>
-
-
-</p>
-
-
-
-	<figure class="debut">
-	<img src="img/benoit/projets.jpg" alt="projet" width="100%" height="" />
-	</figure>
-
-
-</section>
+	
+	
+	<header>
+		<h1 class="titre"><a href="http://benoitgaignard.com/" target="_blank">Benoît Gaignard</a>, designer d'objet — Site web — freelance, 2012</h1>
+	</header>
+	
+	
+	<section class="texte">
+	
+		<p class="description">
+		
+			De la maquette à la programmation, j'ai travaillé en étroite collaboration avec le designer Benoît Gaignard pour la réalisation de son portfolio. Responsive, sobre et clair, il présente les travaux du designer et son parcours. <a href="http://benoitgaignard.com/" target="_blank">Vous trouverez toutes ses créations sur son site.</a>
+		
+		</p>
+	
+	
+	
+		<figure>
+			<img src="img/benoit/projets2.jpg" alt="projet" width="100%" height="" />
+		</figure>
+	
+	
+	</section>
 
 </article>

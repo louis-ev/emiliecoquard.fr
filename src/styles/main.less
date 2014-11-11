@@ -4,6 +4,7 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 @cdarktext : #303030;
+@ctextcopy: #b4b4b4;
 @clgrey : #dcdcdc;
 
 @clinestroke : #333;
@@ -12,6 +13,7 @@
 @cidentite : #ffd366;
 @cnumerique : #b4e0f9;
 @cobjet : #dae291;
+@capropos : #24CEC2;
 
 @cmemoire : #FFD366;
 @ctypo3D : #DAE291;
@@ -30,6 +32,12 @@
 @calice : #E95474;
 @cmacu : #FFD366;
 
+@phone-only:    ~"only screen and (max-width: 767px)";
+@tablet:    ~"only screen and (min-width: 768px)";
+@tablet-only:    ~"only screen and (max-width: 1024px)";
+@desktop:    ~"only screen and (min-width: 1025px)";
+@ldesktop:    ~"only screen and (min-width: 1250px)";
+
 html,
 button,
 input,
@@ -46,6 +54,7 @@ html {
 
 ::-moz-selection {
     background: #333;
+    color: #fff;
     text-shadow: none;
 }
 
@@ -55,9 +64,21 @@ html {
 
 ::selection {
     background: #333;
+    color: #fff;
     text-shadow: none;
 }
 
+.clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
@@ -88,8 +109,9 @@ h1, h2, h3 {
 
 }
 
+/*
 @font-face {
-    font-family: 'audimatregular';
+    font-family: 'audimatbold';
     src: url('../font/audimat-bold-webfont.eot');
     src: url('../font/audimat-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../font/audimat-bold-webfont.woff') format('woff'),
@@ -98,16 +120,19 @@ h1, h2, h3 {
     font-weight: bold;
     font-style: bold;
 }
+*/
 
 
 .audimat-reg {
     font-family: 'audimatregular';
     font-weight: normal;
 }
+/*
 .audimat-bold {
-    font-family: 'audimatregular';
+    font-family: 'audimatbold';
     font-weight: bold;
 }
+*/
 
 
 
@@ -158,20 +183,26 @@ body.is-busy {
 
 
 .conteneur {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+
+  width: 90%;
+  max-width: 950px;
+  margin: auto;
 
 	@media only screen and (min-width: 889px) {
-	    width: 800px;
+	    max-width: 800px;
 	}
 	@media only screen and (min-width: 1111px) {
-	    width: 1000px;
+	    max-width: 1000px;
 	}
 	@media only screen and (min-width: 1334px) {
-	    width: 1200px;
+	    max-width: 1000px;
 	}
 
+}
+
+.conteneurProjet article {
+	width: auto;
+	margin: 0 46px;
 }
 
 
@@ -192,11 +223,11 @@ h1 {
 p, ul {
 	font-size:1.2em;
 	font-size: 16px;
+	list-style: none;
 
 }
 
-body.propos ul {
-	list-style: none;
+[data-categorie="apropos"] ul {
 	padding: 0;
 }
 
@@ -244,6 +275,7 @@ body.propos ul {
 	.conteneurEntete {
 		position: absolute;
 		.conteneur;
+		width: 100%;
 		padding-top: 160px;
 		margin-top:-60px;
 		padding-bottom: 100px;
@@ -279,6 +311,10 @@ body.propos ul {
 			font-weight: normal;
 			margin-left: -10px;
 			margin-right: -10px;
+
+			a {
+				color: @capropos;
+			}
 		}
 
 
@@ -356,6 +392,10 @@ body.propos ul {
 				color: #303030;
 			}
 
+			@media @phone-only {
+				padding: 8px 12px;
+			}
+
 		}
 
 	}
@@ -400,7 +440,8 @@ body.propos ul {
 
 article.projet {
 	padding-top:50px;
-	padding-bottom:50px;
+	padding-bottom:0;
+	margin-bottom: -10px;
 	background-color: #fff;
 
 	transition: background-color .4s ease-out;
@@ -507,6 +548,19 @@ article.projet {
 	overflow: hidden;
 
 	transition: background-color 1.5s, width 1s;
+
+	.ink {
+		display: block; position: absolute;
+		background: transparent;
+		border-radius: 100%;
+		transform: scale(0);
+		z-index: -1;
+	}
+	/*animation effect*/
+	.ink.animate {
+		.transform( scale(3) );
+		transition: transform .6s ease-out;
+	}
 
 	svg {
 		width: 200px;
@@ -617,12 +671,14 @@ article.projet {
 		color: #fff;
 		stroke: #fff;
 		stroke-width: 0;
+		z-index: 0;
 		transition: 1s;
 	}
 	line {
 		stroke-miterlimit: 10;
 		color: #fff;
 		stroke: #fff;
+		z-index: 0;
 		transition: 1s;
 	}
 
@@ -630,7 +686,7 @@ article.projet {
 		fill: transparent;
 		stroke: transparent;
 		z-index: 0;
-		transition: fill .8s .2s, stroke 0s;
+		transition: fill .4s, stroke 0s;
 	}
 
 }
@@ -675,7 +731,14 @@ article.projet {
 
 			color: @color;
 			stroke: @clinestroke;
-			&.is-active, &.is-filtered:not(.is-viewed) {
+
+			&.is-active {
+					.ink {
+						background-color: @color;
+					}
+			}
+
+			&.is-filtered:not(.is-viewed) {
 				background-color: @color;
 			}
 			&.is-viewed {
@@ -686,6 +749,13 @@ article.projet {
 				.titreProjet {
 					color: @color;
 				}
+				&.is-active {
+
+					.ink {
+						background-color: transparent;
+					}
+				}
+
 			}
 		}
 	}
@@ -694,6 +764,7 @@ article.projet {
 	.styleApercu( 'identite', @cidentite );
 	.styleApercu( 'numerique', @cnumerique );
 	.styleApercu( 'objet', @cobjet );
+	.styleApercu( 'apropos', @capropos );
 
 }
 
@@ -736,151 +807,9 @@ article.projet {
 
 }
 
-/*
-#ministere {
-	color: @cministere;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @cministere;
-	}
-}
-
-#airfrance {
-	color: @cairfrance;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @cministere;
-	}
-}
-
-#benoitgaignard {
-	color: @cbenoitgaignard;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @cbenoitgaignard;
-	}
-}
-
-#typo3D {
-	color: @ctypo3D;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @ctypo3D;
-	}
-}
-
-#macu {
-	color: @cmacu;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @cmacu;
-	}
-}
-
-#troishommes {
-	color: @ctroishommes;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @ctroishommes;
-	}
-}
-
-#goutte {
-	color: @cgoutte;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @cgoutte;
-	}
-}
-
-#photomaton {
-	color: @cphotomaton;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @cphotomaton;
-	}
-}
-
-#trendiseases {
-	color: @ctrendiseases;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @ctrendiseases;
-	}
-}
-
-#illustrations {
-	color: @cillustrations;
-	stroke: @clinestroke;
-
-	&.is-active {
-		background-color: @cillustrations;
-	}
-}
-
-#alice {
-	color: @calice;
-	stroke: @clinestroke;
-	&.is-active {
-		background-color: @calice;
-	}
-}
-
-#memoire {
-	color: @cmemoire;
-	stroke: @clinestroke;
-	&.is-active {
-		background-color: @cmemoire;
-	}
-}
-
-#influencedeslivres {
-	color: @cinfluencedeslivres;
-	stroke: @clinestroke;
-	&.is-active {
-		background-color: @cinfluencedeslivres;
-	}
-}
-
-#fourberies {
-	color: @cfourberies;
-	stroke: @clinestroke;
-	&.is-active {
-		background-color: @cinfluencedeslivres;
-	}
-}
-
-#villes {
-	color: @cvilles;
-	stroke: @clinestroke;
-	&.is-active {
-		background-color: @cvilles;
-	}
-}
-
-#series {
-	color: @cseries;
-	stroke: @clinestroke;
-	&.is-active {
-		background-color: @cseries;
-	}
-}
-*/
-
 /* ==========================================================================
 								Pages projets
    ========================================================================== */
-
-
 
 article.projet {
 }
@@ -910,52 +839,41 @@ article.projet img {
 //article.projet[data-categorie = edition]
 
 figure {
-	margin-bottom: 5%;
+	margin-bottom: 60px;
 
 }
 
 .groupeimg {
+
+	.clearfix();
 	margin-right: -5px;
 	margin-left: -5px;
+	margin-bottom: 60px;
 
 	> * {
 		display: block;
 		float:left;
 		border: 5px solid white;
+		margin-bottom: 0;
+	}
+
+}
+
+.groupeimg.troisCol + .groupeimg.troisCol {
+	margin-top: -60px;
+}
+
+.colonnes {
+	.clearfix();
+	margin-bottom: 50px;
+	> .deux {
+		display: block;
+		width: 33.33%;
+		float:left;
+		border-top: 0px !important;
+		border: 20px solid #fff;
 	}
 }
-
-/*
-.groupeimg div {
-	display: inline-block;
-
-	.display(flex);
-
-	margin-right: 0%;
-
-	height: 100%;
-	border: 12px solid white;
-
-	margin-bottom: 5%;
-
-	vertical-align: top;
-
-
-}
-*/
-
-/*
-
-.groupeimg figure {
-	display: inline-block;
-	border: 5px solid white;
-
-}
-
-.groupeimg figure img {
-width:100%;
-}
-*/
 
 .groupeimg .un {
 	width: 16.66%;
@@ -965,7 +883,7 @@ width:100%;
 	width: 25%;
 }
 
-.groupeimg .deux {
+.groupeimg.troisCol > * {
 	width: 33.33%;
 }
 
@@ -999,29 +917,34 @@ width:100%;
 	margin-bottom: 5%;
 }
 
-.titrage, .texte {
-	font-size: 0;
-}
+.titre {
 
-
-.titre, .detail {
-	display: inline-block;
+	display: block;
 	font-size : 1.2rem;
-	font-size: 20px;
-	font-weight: bold;
-    letter-spacing: 0.2px;
+	font-size: 26px;
+
+  letter-spacing: 0.2px;
+
 }
 
+.reduit {
+//	max-width: 850px;
+//	margin:auto;
+}
 
+.projet a {
+	border-bottom: 2px solid;
+}
 
 .texte p, .texte ul {
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 22px;
-	line-height: 1.2rem;
-	display: inline-block;
+
+	display: block;
 	vertical-align: top;
 
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 60px;
+	color: @ctextcopy;
 }
 
 .texte ul {
@@ -1029,8 +952,61 @@ width:100%;
 	margin-top:0;
 	margin-bottom: 0;
 	margin-left: 0;
-	list-style: none;
 }
+
+// infos sous le texte
+.texte .infos {
+	color: @ctextcopy ;
+	font-size: 16px;
+	margin-top: -30px;
+	text-align: right;
+	margin-bottom: 60px;
+}
+
+
+a[href$=".pdf"]:after {
+  content: "pdf";
+  font-size: .5em;
+  margin-left: 3px;
+	vertical-align: super;
+}
+
+a[href$=".doc"]:after {
+  content: "doc";
+  font-size: .5em;
+  margin-left: 3px;
+	vertical-align: super;
+}
+
+.texte .infos.couleur {
+
+
+}
+
+
+.styleArticle( @categorie, @color ) {
+	article.projet[data-categorie = @{categorie}] {
+
+		a {
+				color: @color;
+				border-color: @color;
+		}
+		.titre {
+				color: @color;
+		}
+		.infos.couleur {
+				color: @color;
+		}
+
+	}
+}
+
+.styleArticle( 'edition', @cedition );
+.styleArticle( 'identite', @cidentite );
+.styleArticle( 'numerique', @cnumerique );
+.styleArticle( 'objet', @cobjet );
+.styleArticle( 'apropos', @capropos );
+
 
 
 
@@ -1040,19 +1016,20 @@ width:100%;
 
 
 
-.dates{
+.dates {
 	font-weight: normal;
-font-size: 15px;
-
+	font-size: 15px;
 }
 
-.lieu{
+.lieu {
 	font-weight: normal;
 	font-size: 18px;
-
-	color:#92CCAC;
-    letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
 /* 	line-height: 20px; */
+}
+
+.lead {
+	color: #24CEC2;
 }
 
 .description{
@@ -1060,44 +1037,21 @@ font-size: 15px;
 /* 	line-height: 18px; */
 }
 
-.propos h2{
+[data-categorie="apropos"] h2{
 	margin-bottom: 6%;
 }
 
-.propos .dernier {
+[data-categorie="apropos"] .dernier {
 	margin-bottom: 15%;
 }
 
-.propos a {
-	text-decoration: underline;
+[data-categorie="apropos"] a {
 	color:black;
 }
 
-.propos a:hover {
-	text-decoration: underline;
+[data-categorie="apropos"] a:hover {
 	color:#EA5475;
 }
-
-
-.propos figure.debut {
-	height: 500px;
-	background-color: #92CCAC;
-}
-
-
-.propos #logo path, .propos #logo polygon, .propos #logo rect {
-		fill: #92CCAC !important;
-}
-
-
-.propos .bouton a,
-.propos footer a,
-.propos h1,
-.propos .titre, .propos .detail
- {
-	color:#EA5475;
-}
-
 
 
 /* ==========================================================================

@@ -5,6 +5,6 @@
 		<?php include ("icones.php"); ?>
     </main>
 	<?php include ("footer.php"); ?>
-	<!-- substitute:livereload -->
+	
     </body>
 </html>

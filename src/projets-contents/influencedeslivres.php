@@ -1,137 +1,56 @@
-    		<article class="projet">
+<article class="projet">
 
 
-	    		<figure class="debut">
-		    		<img src="img/dnsep/dnsep-1.jpg" alt="" width="100%" height="" />
-		    	</figure>
+	<figure>
+		<img src="img/dnsep/dnsep1.jpg" alt=""  />
+	</figure>
 
-<!--
-		    		<figcaption>
-		    		Bla bla bla
-		    		</figcaption>
--->
-
-	    		<header class="titrage">
-	    			<h1 class="detail gauche">Détails techniques</h1>
-	    			<h2 class="titre droite">L'influence des livres au sein d'une école d'art</h2>
-	    		</header>
+	<header>
+		<h1 class="titre">L'influence des livres au sein d'une école d'art — DNSEP* — ESAD, 2013</h1>
+	</header>
 
 
-	    		<section class="texte">
+	<section class="texte">
+
+		<p class="description">
+
+    		Ce projet est de rendre réel et visuel le lien entre références et créations artistiques. J'ai donc récupéré les données d'emprunt de livres au sein de mon école afin de les trier par classe, section, sexe, année etc. Il en découle de nombreux résultats intéressants à prendre en compte comme l'importance des livres pour la 5e année lors de l'écriture d'un mémoire par exemple.
+    		J'ai présenté ci-dessous, une partie de mon travail. Entre autre, les cartes de chacun des étudiants avec la représentation de leurs emprunts ainsi que les livres-objets représentant la collection complète de livres disponibles à la bibliothèque de l'école rangés par thématique. <a href="img/dnsep.pdf" target="_blank">Vous trouverez l'ensemble de ma présentation de projet en pdf.</a>
+
+<h2 style="color:#b4b4b4; font-size:16px; margin-top:-30px; text-align:right;">*Diplôme National Supérieur d'Expression Plastique</h2>	  
+		</p>
 
 
-
-			    	<ul class="gauche infos">
-			    		<li>Divers formats et projets</li>
-		    		</ul>
-
-		    		<p class="droite infos">
-
-			    		&not; Ce projet a été de rendre visuel le lien réel entre référence et création artistique. J'ai donc récupéré les données d'emprunt de livres au sein de mon école afin de les trier par classe, section, sexe, année etc. Il en découle de nombreux résultats intéressants pour la suite à prendre en compte comme l'importance des livres pour la 5e année lors de l'écriture d'un mémoire par exemple.
-			    		<br/>
-			    		<br/>&not; J'ai présenté ci-dessous, une partie de mon travail, les cartes de chacun des étudiants avec la représentation de leur emprunt, les livres-objets représentant la collection complète de livre disponible à la bibliothèque de l'école par thématique ainsi qu'une partie de mon cahier de recherches. Vous trouverez l'ensemble de ma <a href="img/dnsep.pdf" target="_blank">présentation de projet en pdf</a>.
-
-		    		</p>
+		<figure>
+    		<img src="img/dnsep/dnsep2.jpg" alt="" />
+    	</figure>
 
 
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-2.jpg" alt="" width="100%" height="" />
-			    	</figure>
+		<figure>
+    		<img src="img/dnsep/dnsep3.jpg" alt=""  />
+    	</figure>
 
 
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-3.jpg" alt="" width="100%" height="" />
-			    	</figure>
+		<figure>
+    		<img src="img/dnsep/dnsep7.jpg" alt="" />
+    	</figure>
 
 
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-5.jpg" alt="" width="100%" height="" />
-			    	</figure>
+		<figure>
+    		<img src="img/dnsep/dnsep8.jpg" alt=""  />
+    	</figure>
 
 
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-6.jpg" alt="" width="100%" height="" />
-			    	</figure>
+		<figure>
+    		<img src="img/dnsep/dnsep9.jpg" alt=""  />
+    	</figure>
 
 
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-7.jpg" alt="" width="100%" height="" />
-			    	</figure>
+		<figure>
+    		<img src="img/dnsep/dnsep10.jpg" alt="" />
+    	</figure>
 
 
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-9.jpg" alt="" width="100%" height="" />
-			    	</figure>
+	</section>
 
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-10.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-11.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-12.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-13.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-14.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-15.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-16.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-17.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-19.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-20.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-22.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-24.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-29.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-30.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-31.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-		    		<figure class="debut">
-			    		<img src="img/dnsep/dnsep-32.jpg" alt="" width="100%" height="" />
-			    	</figure>
-
-	    		</section>
-
-    		</article>
+</article>
