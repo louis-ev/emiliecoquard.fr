@@ -532,6 +532,10 @@ article.projet {
 	font-size: 0;
 	line-height: 0;
 
+	@media @phone-only {
+		text-align: center;
+	}
+
 }
 
 .grilleIcones .apercu {
@@ -599,6 +603,18 @@ article.projet {
 			transition: 1s 0s;
 		}
 
+		.titreUp;
+
+	}
+
+	.touch & {
+
+		.titreUp;
+
+	}
+
+	.titreUp {
+
 		.titreProjet {
 			bottom:5px;
 			opacity: 1;
@@ -610,6 +626,7 @@ article.projet {
 				transition: margin .4s;
 			}
 		}
+
 	}
 
 	&.is-active {
@@ -964,18 +981,19 @@ figure {
 }
 
 
-a[href$=".pdf"]:after {
-  content: "pdf";
+a[href$=".pdf"]:after, a[href$=".doc"]:after {
   font-size: .5em;
   margin-left: 3px;
 	vertical-align: super;
+  line-height: 1;
+}
+
+a[href$=".pdf"]:after {
+  content: "pdf";
 }
 
 a[href$=".doc"]:after {
   content: "doc";
-  font-size: .5em;
-  margin-left: 3px;
-	vertical-align: super;
 }
 
 .texte .infos.couleur {

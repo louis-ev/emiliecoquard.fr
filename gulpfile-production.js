@@ -32,7 +32,7 @@ var pho = require('pho-devstack')(gulp, {
     // cdn: 'http://example.com' // url to your CDN server
     // cdn: '/', // uncomment if you are using absolute paths without CDN
   }),
-  copy: ['scripts/_plugins.js', 'scripts/vendor/jquery-1.11.0.min.js']
+  copy: ['scripts/_plugins.js', 'scripts/vendor/jquery-1.11.0.min.js', 'font/*']
 
 });
 

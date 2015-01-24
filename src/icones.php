@@ -4,9 +4,9 @@
 
 	<!-- mémoire DNSEP -->
 	<a class="item apercu" id="memoire" href="memoire.php" data-categorie="edition" data-dashoffset="810">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Mémoire Dataviz, DNSEP, 2013
-		</title>
+		</h3>
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -57,9 +57,9 @@
 
 	<!-- Projet DNSEP -->
 	<a class="item apercu" id="influencedeslivres" href="influencedeslivres.php" data-categorie="objet" data-dashoffset="320">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Projet Dataviz, DNSEP, 2013
-		</title>
+		</h3>
 
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -115,9 +115,9 @@
 
 	<!-- Datavizualisation -->
 <a class="item apercu" id="dataviz" href="dataviz.php" data-categorie="numerique" data-dashoffset="360">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Datavizualisation, Etalab, 2013
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -175,9 +175,9 @@
 
 	<!-- éditions ministère de la Culture -->
 	<a class="item apercu" id="ministere" href="ministere.php" data-categorie="edition" data-dashoffset="520">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Éditions, Ministère, 2013
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -216,9 +216,9 @@
 
 	<!-- site de Benoît Gaignard-->
 	<a class="item apercu" id="benoitgaignard" href="benoitgaignard.php" data-categorie="numerique" data-dashoffset="420">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Benoit Gaignard, Site web, 2013
-		</title>
+		</h3>
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -285,9 +285,9 @@
 
 	<!-- Air France -->
 	<a class="item apercu" id="airfrance" href="airfrance.php" data-categorie="identite" data-dashoffset="400">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Air France, ESAD, 2012
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -326,9 +326,9 @@
 
 	<!-- Trendiseases -->
 	<a class="item apercu" id="trendiseases" href="trendiseases.php" data-categorie="numerique" data-dashoffset="390">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Trendiseases, GlobalViz, 2012
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -361,9 +361,9 @@
 
 	<!-- typo 3D -->
 	<a class="item apercu" id="typo3D" href="typo3D.php" data-categorie="objet" data-dashoffset="520">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Delaunay, Typographie 3D, 2011
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -443,9 +443,9 @@
 
 	<!-- MACU -->
 	<a class="item apercu" id="macu" href="macu.php" data-categorie="identite" data-dashoffset="810">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				MCA, ESAD, 2011
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -490,9 +490,9 @@
 
 	<!-- Villes invisibles> -->
 	<a class="item apercu" id="villes" href="villes.php" data-categorie="edition" data-dashoffset="500">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Les villes invisibles, ESAD, 2011
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -528,9 +528,9 @@
 
 	<!-- fourberies de Scapin-->
 	<a class="item apercu" id="fourberies" href="fourberies.php" data-categorie="edition" data-dashoffset="460">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Les Fourberies, ESAD, 2011
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -570,9 +570,9 @@
 
 	<!-- Goutte d'eau -->
 	<a class="item apercu" id="goutte" href="goutte.php" data-categorie="objet" data-dashoffset="620">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 		La Goutte d'eau, ESBAM, 2010
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -637,9 +637,9 @@
 
 <!-- trois hommes -->
 	<a class="item apercu" id="troishommes" href="troishommes.php" data-categorie="edition" data-dashoffset="360">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Les "O", ESBAM, 2010
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -693,9 +693,9 @@
 
 
 	<a class="item apercu" id="apropos" href="propos.php" data-categorie="apropos" data-dashoffset="530" style="display: none;">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				À propos
-		</title>
+		</h3>
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 			<g class="pointsLignes">
@@ -722,12 +722,6 @@
 
 
 </div>
-
-
-
-
-
-
 
 	<!-- Lettre i -->
 	<!--
@@ -757,9 +751,9 @@
 	<!-- Portraits graphiques-->
 <!--
 	<a class="item apercu" id="photomaton" href="photomaton.php" data-categorie="numerique" data-dashoffset="360">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Photomaton
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -812,9 +806,9 @@
 <!-- Serie d'éditions -->
 	<!--
 <a class="item apercu" id="series" href="serie.php" data-categorie="edition" data-dashoffset="580">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Série
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -889,9 +883,9 @@
 <!-- Illustrations -->
 <!--
 	<a class="item apercu" id="illustrations" href="illustrations.php" data-categorie="identite" data-dashoffset="530">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Carnet d'illustrations
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
@@ -954,9 +948,9 @@
 	<!-- Alice et le fil magique -->
 <!--
 	<a class="item apercu" id="alice" href="alice.php" data-categorie="numerique" data-dashoffset="630">
-		<title id="title" class="titreProjet">
+		<h3 id="title" class="titreProjet">
 				Alice
-		</title>
+		</h3>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
 <g class="pointsLignes">
